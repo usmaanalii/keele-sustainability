@@ -1,6 +1,7 @@
 $(document).ready(function() {
     $(".button > .paper").click(function() {
         $(".add-paper-info").slideToggle(400);
+        $(this).toggleClass('rotate'); // for button
     });
 
     $(".button > .compost").click(function() {

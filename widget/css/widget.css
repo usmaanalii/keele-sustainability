@@ -65,9 +65,29 @@ h3 {
 	text-align: right;
 }
 
+
+.button div {
+	background: white;
+	padding: 0 7px 3px 7px;
+	border-radius: 20%;
+	color: #D27036;
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
 button:focus {
 	outline: none;
 }
+
+/* Button rotation*/
+
+.rotate {
+	transform: rotate(50deg);
+	transition: 1s;
+}
+
+/* Button rotation end */
+
 
 .expand {
 	display:inline-block;
