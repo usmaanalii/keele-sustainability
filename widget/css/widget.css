@@ -1,0 +1,123 @@
+/** {
+	border: 1px solid black;
+}*/
+
+body {
+	font-family: 'Hammersmith One', sans-serif;
+	background: #c1b9b7
+}
+
+.main {
+	width: 300px;
+	height: 150px;
+	padding: 30px 20px 20px 20px;
+
+	text-align:center;
+
+	color: #fff;
+	background:#D27036;
+}
+
+.compost-widget {
+	background: #3f7300;
+}
+
+.glass-widget {
+	background: #12a8ac;
+}
+
+.metal-widget {
+	background: #536a5e;
+}
+
+.plastic-widget {
+	background: #6e312d;
+}
+
+.general-widget {
+	background: #112369;
+}
+
+h2 {
+	width: 300px;
+	margin: 10px 0 0 0;
+	padding: 0px;
+
+	font-size: 50px;
+}
+
+h3 {
+	margin: 0px;
+	padding: 0px;
+
+	font-size: 20px;
+}
+
+.metric span {
+	font-size: 0.5em;
+}
+
+.button {
+	width: 300px;
+	margin: 0px;
+	padding: 0px;
+
+	text-align: right;
+}
+
+button:focus {
+	outline: none;
+}
+
+.expand {
+	display:inline-block;
+
+	margin: 0px;
+	padding:0px;
+	padding: 0px;
+
+	cursor:pointer;
+	text-decoration: none;
+
+	color: #fff;
+	border: none;
+	background: none;
+
+	font-size: 30px;
+}
+
+.add-info {
+	display:none;
+
+	width: 300px;
+	height: 150px;
+	padding : 20px 20px;
+
+	text-align:center;
+
+	color: #fff;
+}
+
+.add-paper-info {
+	background: #8b441b;
+}
+
+.add-compost-info {
+	background: #294705;
+}
+
+.add-glass-info {
+	background: #0f787a;
+}
+
+.add-metal-info {
+	background: #3d4e45;
+}
+
+.add-plastic-info {
+	background: #542623;
+}
+
+.add-general-info {
+	background: #0a1749;
+}
