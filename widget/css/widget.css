@@ -15,27 +15,6 @@ body {
 	text-align:center;
 
 	color: #fff;
-	background:#D27036;
-}
-
-.compost-widget {
-	background: #3f7300;
-}
-
-.glass-widget {
-	background: #12a8ac;
-}
-
-.metal-widget {
-	background: #536a5e;
-}
-
-.plastic-widget {
-	background: #6e312d;
-}
-
-.general-widget {
-	background: #112369;
 }
 
 h2 {
@@ -68,9 +47,9 @@ h3 {
 
 .button div {
 	background: white;
-	padding: 0 7px 3px 7px;
+	padding: 0 7.5px 3px 7px;
 	border-radius: 20%;
-	color: #D27036;
+	color: black;
 	font-size: 0.8em;
 	font-weight: bold;
 }
@@ -83,7 +62,7 @@ button:focus {
 
 .rotate {
 	transform: rotate(50deg);
-	transition: 1s;
+	transition: 0.6s;
 }
 
 /* Button rotation end */
@@ -118,24 +97,48 @@ button:focus {
 	color: #fff;
 }
 
+.paper-widget {
+	background:#D27036;
+}
+
 .add-paper-info {
 	background: #8b441b;
+}
+
+.compost-widget {
+	background: #3f7300;
 }
 
 .add-compost-info {
 	background: #294705;
 }
 
+.glass-widget {
+	background: #12a8ac;
+}
+
 .add-glass-info {
 	background: #0f787a;
+}
+
+.metal-widget {
+	background: #536a5e;
 }
 
 .add-metal-info {
 	background: #3d4e45;
 }
 
+.plastic-widget {
+	background: #6e312d;
+}
+
 .add-plastic-info {
 	background: #542623;
+}
+
+.general-widget {
+	background: #112369;
 }
 
 .add-general-info {
