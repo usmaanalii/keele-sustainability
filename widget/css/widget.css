@@ -36,7 +36,7 @@ h3 {
 	font-size: 0.5em;
 }
 
-.button {
+.button-style {
 	width: 300px;
 	margin: 0px;
 	padding: 0px;
@@ -44,7 +44,7 @@ h3 {
 	text-align: right;
 }
 
-.button div {
+.button-style div {
 	background: white;
 	padding: 0 7.5px 3px 7px;
 	border-radius: 20%;
@@ -96,8 +96,16 @@ button:focus {
 	color: #fff;
 }
 
+/**
+	* The colours are ordere as follows..
+	*
+	* Colour of the main 'data view' section
+	* Colour of the 'add info' toggled section
+	*
+*/
+
 .paper-widget {
-	background:#D27036;
+	background: #D27036;
 }
 
 .add-paper-info {
@@ -142,4 +150,27 @@ button:focus {
 
 .add-general-info {
 	background: #0a1749;
+}
+
+/**
+	* Targetting the '+' character located in each button
+*/
+
+.button-style > .paper div {
+	color: #D27036;
+}
+.button-style > .compost div {
+	color: #3f7300;
+}
+.button-style > .glass div {
+	color: #12a8ac;
+}
+.button-style > .metal div {
+	color: #536a5e;
+}
+.button-style > .plastic div {
+	color: #6e312d;
+}
+.button-style > .general div {
+	color: #112369;
 }
