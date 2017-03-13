@@ -20,7 +20,7 @@ The web application, will be created using a **widget based** theme.
 
 Based on the requirements gathering, we established that the client wanted a method for tracking the recycling of various materials. From this, we designed a mock up that enabled users to see the individual materials current recycle measurements along with the ability to add furhter input.
 
-The design was created by **James Mitchell**
+The design was created by **James Mitchell** and is largely influenced by the [Keele Style Guide]https://www.keele.ac.uk/brand/).
 
 ... [insert image]...
 
@@ -57,6 +57,10 @@ The recycling widget code is shown below. It has deliberately been designed to a
 
 #### **Task List**
 
+- [x] The Basic widget template has been designed
+- [x] A button has been designed which toggles viewing the input area
+- [x] The toggle button needs to rotate on click
+- [ ] The toggle needs to be redesigned to be perfectly square
 - [ ] The text colour needs to match the background colour
 - [ ] The 'add' button needs to be styled according to the mockup
 - [ ] Form inputs need to have relevent names for backend manipulation
