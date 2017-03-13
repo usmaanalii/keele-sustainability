@@ -55,12 +55,12 @@ The recycling widget code is shown below. It has deliberately been designed to a
 </div>
 ```
 
-#### **TODOS**
+#### **Task List**
 
-* The text colour needs to match the background colour
-* The 'add' button needs to be styled according to the mockup
-* Form inputs need to have relevent names for backend manipulation
-* Code needs to converted to use more responsive friendly measurements i.e 'ems / %' as opposed to 'pixels
+- [] The text colour needs to match the background colour
+- [] The 'add' button needs to be styled according to the mockup
+- [] Form inputs need to have relevent names for backend manipulation
+- [] Code needs to converted to use more responsive friendly measurements i.e 'ems / %' as opposed to 'pixels
 
 The current web application can be found [here](https://usyyy.github.io/).
 
