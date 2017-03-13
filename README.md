@@ -23,10 +23,7 @@ Based on the requirements gathering, we established that the client wanted a met
 The design was created by **James Mitchell**
 
 ... [insert image]...
-<<<<<<< HEAD
 [Mockup](/mockups/recycling-widget.png)
-=======
->>>>>>> 13e519c6648eaffebee17ff074873d0975f34a66
 
 ##### Development
 
