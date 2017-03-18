@@ -69,4 +69,4 @@ The recycling widget code is shown below. It has deliberately been designed to a
 The current web application can be found [here](https://usyyy.github.io/).
 
 
-Feel free to suggest improvements.
+Feel free to suggest improvements to the web application.
