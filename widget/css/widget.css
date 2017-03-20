@@ -1,5 +1,5 @@
 * {
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 }
 
 body {
@@ -157,6 +157,7 @@ button:focus {
 }
 
 /**
+ 	*
 	* Targetting the '+' character located in each button
 */
 
