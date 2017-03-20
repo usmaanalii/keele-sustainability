@@ -1,11 +1,13 @@
 * {
-	/*border: 1px solid black;*/
+	border: 1px solid black;
 }
 
-body {
-	background: #d2d2d0;
+@import url('https://fonts.googleapis.com/css?family=Oswald|Work+Sans:300');
 
-	font-family: 'Hammersmith One', sans-serif;
+body {
+	background: #e6e6e0;
+
+	font-family: 'Work Sans', sans-serif;
 }
 
 .main {
@@ -15,17 +17,18 @@ body {
 
 	text-align:center;
 
-	color: white;
+	color: #e6e6e0;
 }
 
 
 h2 {
 	display: block;
 
-	margin: 10px 0 0 0;
+	margin: 10px 0 10px 0;
 
 	font-size: 3.5em;
 
+	transform: scaleY(1.2);
 }
 
 h3 {
@@ -54,7 +57,7 @@ h3 {
 
 	color: black;
 	border-radius: 20%;
-	background: white;
+	background: #e6e6e0;
 
 	font-size: 0.8em;
 	font-weight: bold;
@@ -67,7 +70,15 @@ button:focus {
 /* Button rotation*/
 
 .rotate {
-	transition: 0.8s;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+	-webkit-transform: rotate(50deg);
+	-moz-transform: rotate(50deg);
+	-ms-transform: rotate(50deg);
+	-o-transform: rotate(50deg);
 	transform: rotate(50deg);
 }
 
@@ -85,6 +96,7 @@ button:focus {
 	border: none;
 	background: none;
 
+
 	font-size: 1.8em;
 }
 
@@ -95,9 +107,32 @@ button:focus {
 	height: 150px;
 	padding : 10px 20px 10px 20px;
 
-	text-align:center;
+	color: #e6e6e0;
+}
 
-	color: white;
+.input-text-area {
+	/*margin-top: -8%;*/
+	padding: 4%;
+
+	border-radius: 5px;
+}
+
+.form-submit-button {
+	display: block;
+	float: right;
+
+	margin-top: 3%;
+	padding: 1% 4% 1% 4%;
+
+	cursor:pointer;
+	text-decoration: none;
+
+	border: none;
+	border-radius: 5px;
+	background: #e6e6e0;
+
+	font-size: 0.75em;
+	font-weight: bold;
 }
 
 /**
@@ -116,7 +151,7 @@ button:focus {
 	background: #8b441b;
 }
 
-.compost-widget {
+.compost-widget  {
 	background: #3f7300;
 }
 
@@ -124,7 +159,7 @@ button:focus {
 	background: #294705;
 }
 
-.glass-widget {
+.glass-widget  {
 	background: #12a8ac;
 }
 
@@ -132,7 +167,7 @@ button:focus {
 	background: #0f787a;
 }
 
-.metal-widget {
+.metal-widget  {
 	background: #536a5e;
 }
 
@@ -140,7 +175,7 @@ button:focus {
 	background: #3d4e45;
 }
 
-.plastic-widget {
+.plastic-widget  {
 	background: #6e312d;
 }
 
@@ -148,7 +183,7 @@ button:focus {
 	background: #542623;
 }
 
-.general-widget {
+.general-widget  {
 	background: #112369;
 }
 
@@ -157,7 +192,6 @@ button:focus {
 }
 
 /**
- 	*
 	* Targetting the '+' character located in each button
 */
 
@@ -178,4 +212,26 @@ button:focus {
 }
 .button-style > .general div {
 	color: #112369;
+}
+
+/**
+	* Targetting the 'add' character located in add button
+*/
+.add-paper-info .form-submit-button {
+	color: #8b441b;
+}
+.add-compost-info .form-submit-button {
+	color: #294705;
+}
+.add-glass-info .form-submit-button {
+	color: #0f787a;
+}
+.add-metal-info .form-submit-button {
+	color: #3d4e45;
+}
+.add-plastic-info .form-submit-button {
+	color: #542623;
+}
+.add-general-info .form-submit-button {
+	color: #0a1749;
 }
