@@ -122,7 +122,8 @@ button:focus {
 
 	font-size: 1.25em;
 }
-
+.
+/* To make the input area longer */
 input[type="number"] {
 	padding: 1% 28% 1% 1%;
 }
