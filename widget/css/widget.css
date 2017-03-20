@@ -26,11 +26,10 @@ h2 {
 
 	margin: 10px 0 10px 0;
 
-	font-size: 3.5em;
-
 	transform: scaleY(1.2);
-
 	letter-spacing: 0.02em;
+
+	font-size: 3.5em;
 }
 
 h3 {
@@ -72,11 +71,13 @@ button:focus {
 /* Button rotation*/
 
 .rotate {
-	-webkit-transition: all .5s;
+	/* TODO: Need to make the button transition work both ways */
+	/*-webkit-transition: all .5s;
 	-moz-transition: all .5s;
 	-ms-transition: all .5s;
 	-o-transition: all .5s;
-	transition: all .5s;
+	transition: all .5s;*/
+
 	-webkit-transform: rotate(50deg);
 	-moz-transform: rotate(50deg);
 	-ms-transform: rotate(50deg);
@@ -98,7 +99,6 @@ button:focus {
 	border: none;
 	background: none;
 
-
 	font-size: 1.8em;
 }
 
@@ -117,7 +117,6 @@ button:focus {
 	padding: 1%;
 
 	border-radius: 5px;
-
 	outline: none;
 
 	font-size: 1.25em;
@@ -142,8 +141,9 @@ button:focus {
 }
 
 div.logo {
-	text-align: center;
 	margin-bottom: 3%;
+
+	text-align: center;
 }
 
 /**
@@ -201,6 +201,8 @@ div.logo {
 .add-general-info {
 	background: #0a1749;
 }
+
+/* TODO: Make the CSS more efficient, violates DRY*/
 
 /**
 	* Targetting the '+' character located in each button

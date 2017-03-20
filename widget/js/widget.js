@@ -1,3 +1,4 @@
+// TODO: Make the code more efficient, violates DRY
 $(document).ready(function() {
     $(".button-style > .paper").click(function() {
         $(".add-paper-info").slideToggle(400);
