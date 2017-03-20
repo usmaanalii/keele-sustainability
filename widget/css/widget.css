@@ -1,10 +1,11 @@
-/** {
+* {
 	border: 1px solid black;
-}*/
+}
 
 body {
-	font-family: 'Hammersmith One', sans-serif;
 	background: #d2d2d0;
+
+	font-family: 'Hammersmith One', sans-serif;
 }
 
 .main {
@@ -19,37 +20,42 @@ body {
 
 
 h2 {
-	width: 300px;
-	margin: 10px 0 0 0;
-	padding: 0px;
+	display: block;
 
-	font-size: 50px;
+	margin: 10px 0 0 0;
+
+	font-size: 3.5em;
+
 }
 
 h3 {
-	margin: 0px;
-	padding: 0px;
+	display: inline;
 
-	font-size: 20px;
+	font-size: 1.5em;
 }
 
 .metric span {
+	margin-left: 1%;
+
 	font-size: 0.5em;
 }
 
 .button-style {
-	width: 300px;
+	display: inline;
+	float: right;
+
 	margin: 0px;
 	padding: 0px;
-
-	text-align: right;
 }
 
 .button-style div {
-	background: white;
-	padding: 0 7.5px 3px 7px;
-	border-radius: 20%;
+	/* TODO: This needs to be changed so that the button is square */
+	padding: 0 0.31em 0.14em 0.3em;
+
 	color: black;
+	border-radius: 20%;
+	background: white;
+
 	font-size: 0.8em;
 	font-weight: bold;
 }
@@ -61,8 +67,8 @@ button:focus {
 /* Button rotation*/
 
 .rotate {
+	transition: 0.8s;
 	transform: rotate(50deg);
-	transition: 0.6s;
 }
 
 /* Button rotation end */
@@ -71,18 +77,15 @@ button:focus {
 .expand {
 	display:inline-block;
 
-	margin: 0px;
-	padding:0px;
 	padding: 0px;
 
 	cursor:pointer;
 	text-decoration: none;
 
-	color: white;
 	border: none;
 	background: none;
 
-	font-size: 30px;
+	font-size: 1.8em;
 }
 
 .add-info {
@@ -90,7 +93,7 @@ button:focus {
 
 	width: 300px;
 	height: 150px;
-	padding : 20px 20px;
+	padding : 10px 20px 10px 20px;
 
 	text-align:center;
 
@@ -100,8 +103,8 @@ button:focus {
 /**
 	* The colours are ordere as follows..
 	*
-	* Colour of the main 'data view' section
-	* Colour of the 'add info' toggled section
+	* Colour of the main 'data view' section (x-widget)
+	* Colour of the 'add info' toggled section (add-x-info)
 	*
 */
 
