@@ -1,5 +1,5 @@
 * {
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 }
 
 @import url('https://fonts.googleapis.com/css?family=Oswald|Work+Sans:300');
@@ -29,6 +29,8 @@ h2 {
 	font-size: 3.5em;
 
 	transform: scaleY(1.2);
+
+	letter-spacing: 0.02em;
 }
 
 h3 {
@@ -112,9 +114,17 @@ button:focus {
 
 .input-text-area {
 	/*margin-top: -8%;*/
-	padding: 4%;
+	padding: 1%;
 
 	border-radius: 5px;
+
+	outline: none;
+
+	font-size: 1.25em;
+}
+
+input[type="number"] {
+	padding: 1% 28% 1% 1%;
 }
 
 .form-submit-button {
