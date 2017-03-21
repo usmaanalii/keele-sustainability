@@ -37,24 +37,28 @@ The recycling widget code is shown below. It has deliberately been designed to a
 ``` html
 <div class="main paper-widget">
 
-  <div class="metric">
-    <h3>Paper</h3>
-    <h2>12.6<span> kg</span></h2>
-  </div>
+    <div class="metric">
+        <h3>Paper</h3>
+        <h2>12.6<span>kg</span></h2>
+    </div>
 
-  <div class="button-style">
-  	<button class="expand paper"><div>+</div></button>
-  </div>
+    <div class="button-style">
+        <button class="expand paper">
+            <div>+</div>
+        </button>
+    </div>
 
 </div>
 
 <div class="add-info add-paper-info">
-  <form class="input-form" action="">
-    <p>Please enter the new measurement:</p>
-    <br>
-  <input class="input-text-area" type="text" name="measurement" value="Placeholder" size="36">
-  <input class="form-submit-button" type="submit" value="Add">
-  </form>
+    <form class="input-form" action="">
+
+        <p>Please enter the new measurement:</p>
+
+        <input class="input-text-area" type="number" name="measurement" size="">
+        <input class="form-submit-button" type="submit" value="Add">
+
+    </form>
 </div>
 ```
 
