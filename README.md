@@ -22,7 +22,7 @@ Based on the requirements gathering, we established that the client wanted a met
 
 The design was created by **James Mitchell** and is largely influenced by the [Keele Style Guide](https://www.keele.ac.uk/brand/).
 
-... [insert image]...
+![recycling-widget](mockups/recycling-widget.jpg)
 
 ##### Development
 
@@ -61,10 +61,10 @@ The recycling widget code is shown below. It has deliberately been designed to a
 - [x] A button has been designed which toggles viewing the input area
 - [x] The toggle button needs to rotate on click
 - [ ] The toggle needs to be redesigned to be perfectly square
-- [ ] The text colour needs to match the background colour
-- [ ] The 'add' button needs to be styled according to the mockup
+- [x] The text colour needs to match the background colour
+- [x] The 'add' button needs to be styled according to the mockup
 - [ ] Form inputs need to have relevent names for backend manipulation
-- [ ] Code needs to converted to use more responsive friendly measurements i.e 'ems / %' as opposed to 'pixels
+- [ ] Code needs to converted to use more responsive friendly measurements
 
 The current web application can be found [here](https://usyyy.github.io/).
 
