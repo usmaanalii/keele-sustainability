@@ -54,7 +54,7 @@ h3 {
 
 .button-style div {
 	/* TODO: This needs to be changed so that the button is square */
-	padding: 0 0.31em 0.14em 0.3em;
+	padding: 0 0.35em 0.14em 0.3em;
 
 	color: black;
 	border-radius: 20%;
@@ -120,6 +120,7 @@ button:focus {
 	outline: none;
 
 	font-size: 1.25em;
+	width: 96%;
 }
 
 .form-submit-button {
