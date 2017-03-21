@@ -2,6 +2,10 @@
 
 ### Developing a web application for the Keele Sustainability Bungalow
 
+### **Goals**
+
+Based on the requirements gathering, we established that the client wanted a method for tracking the recycling of various materials. From this, we designed a mock up that enabled users to see the individual materials current recycle measurements along with the ability to add furhter input.
+
 **Team members**:
 
  * James Mitchell
@@ -16,9 +20,7 @@
 
 The web application, will be created using a **widget based** theme.
 
-### **Features**
-
-Based on the requirements gathering, we established that the client wanted a method for tracking the recycling of various materials. From this, we designed a mock up that enabled users to see the individual materials current recycle measurements along with the ability to add furhter input.
+### **Design**
 
 The design was created by **James Mitchell** and is largely influenced by the [Keele Style Guide](https://www.keele.ac.uk/brand/).
 
