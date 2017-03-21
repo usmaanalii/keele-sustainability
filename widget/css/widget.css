@@ -143,8 +143,8 @@ button:focus {
 	font-weight: bold;
 }
 
-div.logo {
-	margin-bottom: 3%;
+footer div {
+	margin-bottom: 2%;
 
 	text-align: center;
 }
