@@ -120,6 +120,8 @@ button:focus {
 	outline: none;
 
 	font-size: 1.25em;
+	/* TODO: This solves the input area not extending its div on mobile devices, but it changes the
+			style on desktop devices, need to create a solution that makes it look right on both*/
 	width: 96%;
 }
 
