@@ -22,7 +22,10 @@ Based on the requirements gathering, we established that the client wanted a met
 
 The design was created by **James Mitchell** and is largely influenced by the [Keele Style Guide](https://www.keele.ac.uk/brand/).
 
-<img style="display: block; margin: 0 auto;" src="mockups/recycling-widget.jpg" width="250"/>
+<p align="center">
+     <img src="mockups/recycling-widget.jpg" width="250"/>
+</p>
+
 
 ##### Development
 
