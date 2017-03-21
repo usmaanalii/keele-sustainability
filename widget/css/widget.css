@@ -44,63 +44,63 @@ h3 {
 	font-size: 0.5em;
 }
 
+/**
+ * widget panel button
+ **/
 .button-style {
-	display: inline;
 	float: right;
-
-	margin: 0px;
-	padding: 0px;
-}
-
-.button-style div {
-	/* TODO: This needs to be changed so that the button is square */
-	padding: 0 0.35em 0.14em 0.3em;
-
-	color: black;
-	border-radius: 20%;
-	background: #e6e6e0;
-
-	font-size: 0.8em;
-	font-weight: bold;
-}
-
-button:focus {
 	outline: none;
-}
-
-/* Button rotation*/
-
-.rotate {
-	/* TODO: Need to make the button transition work both ways */
-	/*-webkit-transition: all .5s;
-	-moz-transition: all .5s;
-	-ms-transition: all .5s;
-	-o-transition: all .5s;
-	transition: all .5s;*/
-
-	-webkit-transform: rotate(50deg);
-	-moz-transform: rotate(50deg);
-	-ms-transform: rotate(50deg);
-	-o-transform: rotate(50deg);
-	transform: rotate(50deg);
-}
-
-/* Button rotation end */
-
-
-.expand {
-	display:inline-block;
-
-	padding: 0px;
-
-	cursor:pointer;
-	text-decoration: none;
-
-	border: none;
-	background: none;
-
+	text-align: center;
+	height: 30px;
+	width: 30px;
+	line-height: 0;
 	font-size: 1.8em;
+	border: none;
+	border-radius: 20%;
+	-webkit-transform: rotate(0deg);
+	    -ms-transform: rotate(0deg);
+	        transform: rotate(0deg);
+	transition: -webkit-transform .5s;
+	transition: transform .5s;
+	transition: transform .5s, -webkit-transform .5s;
+	cursor: pointer;
 }
+
+/**
+ * widget panel button active state
+ */
+.rotate {
+	-webkit-transform: rotate(50deg);
+	    -ms-transform: rotate(50deg);
+	        transform: rotate(50deg);
+	transition: -webkit-transform .5s;
+	transition: transform .5s;
+	transition: transform .5s, -webkit-transform .5s;
+}
+
+/**
+	* Targetting the '+' character located in each button
+*/
+
+.button-style.paper {
+	color: #D27036;
+}
+.button-style.compost {
+	color: #3f7300;
+}
+.button-style.glass {
+	color: #12a8ac;
+}
+.button-style.metal{
+	color: #536a5e;
+}
+.button-style.plastic {
+	color: #6e312d;
+}
+.button-style.general {
+	color: #112369;
+}
+
 
 .add-info {
 	display:none;
@@ -207,28 +207,7 @@ footer div {
 
 /* TODO: Make the CSS more efficient, violates DRY*/
 
-/**
-	* Targetting the '+' character located in each button
-*/
 
-.button-style > .paper div {
-	color: #D27036;
-}
-.button-style > .compost div {
-	color: #3f7300;
-}
-.button-style > .glass div {
-	color: #12a8ac;
-}
-.button-style > .metal div {
-	color: #536a5e;
-}
-.button-style > .plastic div {
-	color: #6e312d;
-}
-.button-style > .general div {
-	color: #112369;
-}
 
 /**
 	* Targetting the 'add' character located in add button
