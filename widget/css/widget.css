@@ -68,16 +68,17 @@ button:focus {
 	outline: none;
 }
 
+button {
+	-webkit-transition:  transform .5s ease-out;
+	-moz-transition:  transform .5s ease-out;
+	-ms-transition:  transform .5s ease-out;
+	-o-transition:  transform .5s ease-out;
+	transition:  transform .5s ease-out;
+}
+
 /* Button rotation*/
 
 .rotate {
-	/* TODO: Need to make the button transition work both ways */
-	/*-webkit-transition: all .5s;
-	-moz-transition: all .5s;
-	-ms-transition: all .5s;
-	-o-transition: all .5s;
-	transition: all .5s;*/
-
 	-webkit-transform: rotate(50deg);
 	-moz-transform: rotate(50deg);
 	-ms-transform: rotate(50deg);
