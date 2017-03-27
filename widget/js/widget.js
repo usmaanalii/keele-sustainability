@@ -29,4 +29,5 @@ $(document).ready(function() {
         $(".add-general-info").slideToggle(400);
         $(this).toggleClass('rotate-button'); // for button
     });
+
 });
