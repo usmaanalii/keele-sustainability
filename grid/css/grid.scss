@@ -23,3 +23,11 @@
 
     justify-content: flex-start;
 }
+
+// Prevent all widgets wrapping to one line on large screens
+@media (min-width: 1345px) {
+  .flex-container {
+      width: 1345px;
+      margin: 1% auto;
+  }
+}
