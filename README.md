@@ -37,30 +37,26 @@ The recycling widget code is shown below. It has deliberately been designed to a
 ###### Widget Markup
 
 ``` html
-<div class="main paper-widget">
+<div class="widget-container paper-widget">
 
-    <div class="metric">
-        <h3>Paper</h3>
-        <h2>12.6<span>kg</span></h2>
+    <div class="material-details">
+        <h1 class="material-name">Paper</h1>
+        <h2 class="material-measurement">12.6<span class="metric">kg</span></h2>
     </div>
 
-    <div class="button-style">
-        <button class="expand paper">
-            <div>+</div>
-        </button>
+    <div class="add-button-style">
+        <button class="paper"><div class="button-value">+</div></button>
     </div>
 
 </div>
 
-<div class="add-info add-paper-info">
+<div class="add-info-container add-paper-info">
     <form class="input-form" action="">
-
         <p>Please enter the new measurement:</p>
-
-        <input class="input-text-area" type="number" name="measurement" size="">
+        <input class="input-measurement-area" type="number" name="paper-input" size="">
         <input class="form-submit-button" type="submit" value="Add">
-
     </form>
+
 </div>
 ```
 
