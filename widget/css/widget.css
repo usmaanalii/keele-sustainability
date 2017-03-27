@@ -128,6 +128,13 @@ h2.material-measurement {
 	font-size: 1.25em;
 }
 
+/* Make the add button line up with input area on mobile */
+@media (max-width: 600px) {
+	.input-measurement-area {
+	  	width: 97.2%;
+  }
+}
+
 .form-submit-button {
 	display: block;
 	float: right;
