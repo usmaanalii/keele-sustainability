@@ -73,7 +73,7 @@ The recycling widget code is shown below. It has deliberately been designed to a
 - [x] The text colour needs to match the background colour
 - [x] The 'add' button needs to be styled according to the mockup
 - [ ] Form inputs need to have relevent names for backend manipulation
-- [ ] Code needs to converted to use more responsive friendly measurements
+- [x] Code needs to converted to use more responsive friendly measurements
 
 The current web application can be found [here](https://usyyy.github.io/).
 
