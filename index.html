@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/normalize-css/normalize.css"></script>
+    <link rel="stylsheet" href="bower_components/normalize-css/normalize.css">
     <link rel="stylesheet" href="grid/css/grid.min.css">
     <link rel="stylesheet" href="widget/css/widget.css">
     <title>Sustainability Site</title>
@@ -15,146 +15,150 @@
 
     <ul class="flex-container">
         <li class="flex-item">
-            <div class="main paper-widget">
+            <div class="widget-container paper-widget">
 
-                <div class="metric">
-                    <h3>Paper</h3>
-                    <h2>12.6<span>kg</span></h2>
+                <div class="material-details">
+                    <h1 class="material-name">Paper</h1>
+                    <h2 class="material-measurement">12.6<span class="metric">kg</span></h2>
                 </div>
 
-                <div class="button-style">
-                    <button class="expand paper"><div>+</div></button>
+                <div class="add-button-style">
+                    <button class="paper"><div class="button-value">+</div></button>
                 </div>
 
             </div>
 
-            <div class="add-info add-paper-info">
+            <div class="add-info-container add-paper-info">
                 <form class="input-form" action="">
                     <p>Please enter the new measurement:</p>
-                    <!-- TODO: decide on input style (semantic vs aesthetic) -->
-                    <!-- This input is styled differently, with a type="number" for semantic purposes -->
-                    <input class="input-text-area" type="number" name="measurement" size="">
+                    <input class="input-measurement-area" type="number" name="measurement" size="">
                     <input class="form-submit-button" type="submit" value="Add">
                 </form>
+
             </div>
         </li>
 
         <li class="flex-item">
-            <div class="main compost-widget">
-                <div class="metric">
-                    <h3>Compost</h3>
-                    <h2>8.4<span>kg</span></h2>
+            <div class="widget-container compost-widget">
+                <div class="material-details">
+                    <h1 class="material-name">Compost</h1>
+                    <h2 class="material-measurement">8.4<span class="metric">kg</span></h2>
                 </div>
 
-                <div class="button-style">
-                    <button class="expand compost"><div>+</div></button>
+                <div class="add-button-style">
+                    <button class="compost"><div class="button-value">+</div></button>
                 </div>
             </div>
-            <div class="add-info add-compost-info">
+            <div class="add-info-container add-compost-info">
                 <form class="input-form" action="">
                     <p>Please enter the new measurement:</p>
 
-                    <input class="input-text-area" type="number" name="measurement">
+                    <input class="input-measurement-area" type="number" name="measurement">
                     <input class="form-submit-button" type="submit" value="Add">
                 </form>
+
             </div>
         </li>
 
         <li class="flex-item">
             <!-- Widget 3 -->
-    <div class="main glass-widget">
+            <div class="widget-container glass-widget">
 
-        <div class="metric">
-            <h3>Glass</h3>
-            <h2>18.9<span>kg</span></h2>
-        </div>
+                <div class="material-details">
+                    <h1 class="material-name">Glass</h1>
+                    <h2 class="material-measurement">18.9<span class="metric">kg</span></h2>
+                </div>
 
-        <div class="button-style">
-            <button class="expand glass"><div>+</div></button>
-        </div>
+                <div class="add-button-style">
+                    <button class="glass"><div class="button-value">+</div></button>
+                </div>
 
-    </div>
+            </div>
 
-    <div class="add-info add-glass-info">
-        <form class="input-form" action="">
-            <p>Please enter the new measurement:</p>
-            <input class="input-text-area" type="number" name="measurement">
-            <input class="form-submit-button" type="submit" value="Add">
-        </form>
-    </div>
+            <div class="add-info-container add-glass-info">
+                <form class="input-form" action="">
+                    <p>Please enter the new measurement:</p>
+                    <input class="input-measurement-area" type="number" name="measurement">
+                    <input class="form-submit-button" type="submit" value="Add">
+                </form>
+
+            </div>
         </li>
 
         <li class="flex-item">
             <!-- Widget 4 -->
-    <div class="main metal-widget">
+            <div class="widget-container metal-widget">
 
-        <div class="metric">
-            <h3>Metal</h3>
-            <h2>4.6<span>kg</span></h2>
-        </div>
+                <div class="material-details">
+                    <h1 class="material-name">Metal</h1>
+                    <h2 class="material-measurement">4.6<span class="metric">kg</span></h2>
+                </div>
 
-        <div class="button-style">
-            <button class="expand metal"><div>+</div></button>
-        </div>
+                <div class="add-button-style">
+                    <button class="metal"><div class="button-value">+</div></button>
+                </div>
 
-    </div>
+            </div>
 
-    <div class="add-info add-metal-info">
-        <form class="input-form" action="">
-            <p>Please enter the new measurement:</p>
-            <input class="input-text-area" type="number" name="measurement">
-            <input class="form-submit-button" type="submit" value="Add">
-        </form>
-    </div>
+            <div class="add-info-container add-metal-info">
+                <form class="input-form" action="">
+                    <p>Please enter the new measurement:</p>
+                    <input class="input-measurement-area" type="number" name="measurement">
+                    <input class="form-submit-button" type="submit" value="Add">
+                </form>
+
+            </div>
         </li>
 
         <li class="flex-item">
             <!-- Widget 5 -->
-    <div class="main plastic-widget">
+            <div class="widget-container plastic-widget">
 
-        <div class="metric">
-            <h3>Plastic</h3>
-            <h2>17.2<span>kg</span></h2>
-        </div>
+                <div class="material-details">
+                    <h1 class="material-name">Plastic</h1>
+                    <h2 class="material-measurement">17.2<span class="metric">kg</span></h2>
+                </div>
 
-        <div class="button-style">
-            <button class="expand plastic"><div>+</div></button>
-        </div>
+                <div class="add-button-style">
+                    <button class="plastic"><div class="button-value">+</div></button>
+                </div>
 
-    </div>
+            </div>
 
-    <div class="add-info add-plastic-info">
-        <form class="input-form" action="">
-            <p>Please enter the new measurement:</p>
-            <input class="input-text-area" type="number" name="measurement">
-            <input class="form-submit-button" type="submit" value="Add">
-        </form>
-    </div>
+            <div class="add-info-container add-plastic-info">
+                <form class="input-form" action="">
+                    <p>Please enter the new measurement:</p>
+                    <input class="input-measurement-area" type="number" name="measurement">
+                    <input class="form-submit-button" type="submit" value="Add">
+                </form>
+
+            </div>
         </li>
 
         <!-- Widget 6 -->
         <li class="flex-item">
             <!-- Widget 3 -->
-    <div class="main general-widget">
+            <div class="widget-container general-widget">
 
-        <div class="metric">
-            <h3>General</h3>
-            <h2>10.3<span>kg</span></h2>
-        </div>
+                <div class="material-details">
+                    <h1 class="material-name">General</h1>
+                    <h2 class="material-measurement">10.3<span class="metric">kg</span></h2>
+                </div>
 
-        <div class="button-style">
-            <button class="expand general"><div>+</div></button>
-        </div>
+                <div class="add-button-style">
+                    <button class="general"><div class="button-value">+</div></button>
+                </div>
 
-    </div>
+            </div>
 
-    <div class="add-info add-general-info">
-        <form class="input-form" action="">
-            <p>Please enter the new measurement:</p>
-            <input class="input-text-area" type="number" name="measurement">
-            <input class="form-submit-button" type="submit" value="Add">
-        </form>
-    </div>
+            <div class="add-info-container add-general-info">
+                <form class="input-form" action="">
+                    <p>Please enter the new measurement:</p>
+                    <input class="input-measurement-area" type="number" name="measurement">
+                    <input class="form-submit-button" type="submit" value="Add">
+                </form>
+
+            </div>
         </li>
     </ul>
 

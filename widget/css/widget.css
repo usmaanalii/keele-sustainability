@@ -10,7 +10,10 @@ body {
 	font-family: 'Work Sans', sans-serif;
 }
 
-.main {
+/* Main widget
+   ======================================================================== */
+
+.widget-container {
 	width: 300px;
 	height: 150px;
 	padding: 30px 20px 20px 20px;
@@ -20,8 +23,14 @@ body {
 	color: #e6e6e0;
 }
 
+h1.material-name {
+	display: inline;
 
-h2 {
+	font-size: 1.5em;
+}
+
+
+h2.material-measurement {
 	display: block;
 
 	margin: 10px 0 10px 0;
@@ -32,19 +41,17 @@ h2 {
 	font-size: 3.5em;
 }
 
-h3 {
-	display: inline;
-
-	font-size: 1.5em;
-}
-
-.metric span {
+/* Targets the 'kg'*/
+.material-measurement .metric {
 	margin-left: 1%;
 
 	font-size: 0.5em;
 }
 
-.button-style {
+/* Add button
+   ======================================================================== */
+
+.add-button-style {
 	display: inline;
 	float: right;
 
@@ -52,8 +59,9 @@ h3 {
 	padding: 0px;
 }
 
-.button-style div {
-	/* TODO: This needs to be changed so that the button is square */
+/* TODO: Button needs redesign to be perfectly square */
+/* .button-value refers to the '+' character */
+.add-button-style .button-value {
 	padding: 0 0.35em 0.14em 0.3em;
 
 	color: black;
@@ -64,21 +72,30 @@ h3 {
 	font-weight: bold;
 }
 
-button:focus {
+.add-button-style button:focus {
 	outline: none;
 }
 
-button {
+.add-button-style button {
+	display:inline-block;
+
+	padding: 0px;
+
+	cursor:pointer;
 	-webkit-transition:  transform .5s ease-out;
 	-moz-transition:  transform .5s ease-out;
-	-ms-transition:  transform .5s ease-out;
-	-o-transition:  transform .5s ease-out;
 	transition:  transform .5s ease-out;
+	text-decoration: none;
+
+	border: none;
+	background: none;
+
+	font-size: 1.8em;
 }
 
 /* Button rotation*/
 
-.rotate {
+.rotate-button {
 	-webkit-transform: rotate(50deg);
 	-moz-transform: rotate(50deg);
 	-ms-transform: rotate(50deg);
@@ -88,22 +105,10 @@ button {
 
 /* Button rotation end */
 
+/* Add measurement toggled section
+   ======================================================================== */
 
-.expand {
-	display:inline-block;
-
-	padding: 0px;
-
-	cursor:pointer;
-	text-decoration: none;
-
-	border: none;
-	background: none;
-
-	font-size: 1.8em;
-}
-
-.add-info {
+.add-info-container {
 	display:none;
 
 	width: 300px;
@@ -113,17 +118,14 @@ button {
 	color: #e6e6e0;
 }
 
-.input-text-area {
-	/*margin-top: -8%;*/
+.input-measurement-area {
+	width: 96%;
 	padding: 1%;
 
 	border-radius: 5px;
 	outline: none;
 
 	font-size: 1.25em;
-	/* TODO: This solves the input area not extending its div on mobile devices, but it changes the
-			style on desktop devices, need to create a solution that makes it look right on both*/
-	width: 96%;
 }
 
 .form-submit-button {
@@ -150,10 +152,13 @@ footer div {
 	text-align: center;
 }
 
+/* Main widget + toggled section colours
+   ======================================================================== */
+
 /**
 	* The colours are ordere as follows..
 	*
-	* Colour of the main 'data view' section (x-widget)
+	* Colour of the main widget section (x-widget)
 	* Colour of the 'add info' toggled section (add-x-info)
 	*
 */
@@ -212,22 +217,22 @@ footer div {
 	* Targetting the '+' character located in each button
 */
 
-.button-style > .paper div {
+.add-button-style > .paper div {
 	color: #D27036;
 }
-.button-style > .compost div {
+.add-button-style > .compost div {
 	color: #3f7300;
 }
-.button-style > .glass div {
+.add-button-style > .glass div {
 	color: #12a8ac;
 }
-.button-style > .metal div {
+.add-button-style > .metal div {
 	color: #536a5e;
 }
-.button-style > .plastic div {
+.add-button-style > .plastic div {
 	color: #6e312d;
 }
-.button-style > .general div {
+.add-button-style > .general div {
 	color: #112369;
 }
 
