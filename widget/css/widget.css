@@ -62,7 +62,7 @@ h2.material-measurement {
 /* TODO: Button needs redesign to be perfectly square */
 /* .button-value refers to the '+' character */
 .add-button-style .button-value {
-	padding: 0 0.35em 0.14em 0.3em;
+	padding: 0 0.35em 0.15em 0.34em;
 
 	color: black;
 	border-radius: 20%;
@@ -224,22 +224,22 @@ footer div {
 	* Targetting the '+' character located in each button
 */
 
-.add-button-style > .paper div {
+.add-button-style > .paper .button-value {
 	color: #D27036;
 }
-.add-button-style > .compost div {
+.add-button-style > .compost .button-value {
 	color: #3f7300;
 }
-.add-button-style > .glass div {
+.add-button-style > .glass .button-value {
 	color: #12a8ac;
 }
-.add-button-style > .metal div {
+.add-button-style > .metal .button-value {
 	color: #536a5e;
 }
-.add-button-style > .plastic div {
+.add-button-style > .plastic .button-value {
 	color: #6e312d;
 }
-.add-button-style > .general div {
+.add-button-style > .general .button-value {
 	color: #112369;
 }
 
