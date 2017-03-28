@@ -10,11 +10,11 @@
 - [**Markup Walkthrough**](#markup-walkthrough)
 - [**Initial Task List**](#initial-task-list)
 
-#### Goals
+### Goals
 
 Based on the requirements gathering, we established that the client wanted an application that enabled residents of the Keele Sustainability Bungalow to keep better track of the materials that they recycle. From the initial research, we decided that the most sensible approach would be to create a web application with the view of making it mobile friendly.
 
-#### Team members:
+### Team members:
 
  * James Mitchell
  * Lee Parker
@@ -25,7 +25,7 @@ Based on the requirements gathering, we established that the client wanted an ap
  * Ryan Moffatt
  * Kaiyi Xiu
 
-#### Design
+### Design
 
 The design was created by **James Mitchell** and will utilize a **widget based** approach. Colour choices are largely influenced by the [Keele Style Guide](https://www.keele.ac.uk/brand/).
 
@@ -34,15 +34,15 @@ The design was created by **James Mitchell** and will utilize a **widget based**
 </p>
 
 
-#### Development
+### Development
 
 One of the most important features of using the widget based approach, was that it alligned with the **agile development** approach that the team settled on. It promoted the idea of developing features iteratively with the aim of reducing dependencies.
 
 The recycling widget code is shown below. It has been constructed to act as a template such that the **material name** acts as a parameter that can be manipulated based on what it being tracked.
 
-#### Technologies
+### Technologies
 
-##### HTML, CSS (including SASS), jQuery
+#### HTML, CSS (including SASS), jQuery
 
 The Basic web development stack was used, along with SASS, a CSS preprocessor that was used in the responsive grid.
 
@@ -52,7 +52,7 @@ Bower, is used to manage components for front end development, this project is s
 
 So far, it has been used to download jQuery and normalize.css.
 
-#### Markup walkthrough
+### Markup walkthrough
 
 ##### Flexbox Grid
 
@@ -79,7 +79,7 @@ The `ul` tag represents the container for the widgets, and each widget is placed
 </ul>
 ```
 
-###### Widget
+##### Widget
 
 Each widget consists of the following sections...
 
@@ -117,7 +117,7 @@ Each widget consists of the following sections...
 </div>
 ```
 
-#### Initial Task List
+### Initial Task List
 
 - [x] Design basic widget templates
 - [x] Design a button that will be used to toggle the 'add info' area
