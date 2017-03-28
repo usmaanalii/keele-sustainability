@@ -2,11 +2,17 @@
 
 ### Developing a web application for the Keele Sustainability Bungalow
 
-### **Goals**
+- [**Goals**](#goals)
+- [**Team members**](#team-members)
+- [**Design**](#design)
+- [**Development**](#development)
+- [**Task List**](#task-list)
 
-Based on the requirements gathering, we established that the client wanted a method for tracking the recycling of various materials. From this, we designed a mock up that enabled users to see the individual materials current recycle measurements along with the ability to add furhter input.
+#### Goals
 
-**Team members**:
+Based on the requirements gathering, we established that the client wanted an application that enabled residents of the Keele Sustainability Bungalow to keep better track of the materials that they recycle. From the initial research, we decided that the most sensible approach would be to create a web application with the view of making it mobile friendly.
+
+#### Team members:
 
  * James Mitchell
  * Lee Parker
@@ -17,61 +23,109 @@ Based on the requirements gathering, we established that the client wanted a met
  * Ryan Moffatt
  * Kaiyi Xiu
 
+#### Design
 
-The web application, will be created using a **widget based** theme.
-
-### **Design**
-
-The design was created by **James Mitchell** and is largely influenced by the [Keele Style Guide](https://www.keele.ac.uk/brand/).
+The design was created by **James Mitchell** and will utilize a **widget based** approach. Colour choices are largely influenced by the [Keele Style Guide](https://www.keele.ac.uk/brand/).
 
 <p align="center">
      <img src="mockup/recycling-widget.jpg" width="250"/>
 </p>
 
 
-##### Development
+#### Development
 
-One of the most important features of using the widget based approach, was that it alligned with the agile development approach that the team settled on. It promotes the idea of developing features independently with minimal dependencies on each other.
-The recycling widget code is shown below. It has deliberately been designed to act as a shoe in template such that the material name acts as a parameter that can be manipulated based on what it being tracked.
+One of the most important features of using the widget based approach, was that it alligned with the **agile development** approach that the team settled on. It promoted the idea of developing features iteratively with the aim of reducing dependencies.
 
-###### Widget Markup
+The recycling widget code is shown below. It has been constructed to act as a template such that the **material name** acts as a parameter that can be manipulated based on what it being tracked.
+
+##### Technologies
+
+###### HTML, CSS (including SASS), jQuery
+
+The Basic web development stack was used, along with SASS, a CSS preprocessor that was used in the **responsive grid**.
+
+###### Bower
+
+Bower, is used to manage components for front end development, this project is small in scope, however, in order to ensure the web application is scalable, it made sense to use a package manager.
+
+So far, it has been used to download **jQuery** and **normalize.css**.
+
+##### Markup walkthrough
+
+###### Flexbox Grid
+
+The `ul` tag represents the container for the widgets, and each widget is placed inside their own `li` tags. The SASS responsible for this behaviour can be seen in `src/css/sass/grid.scss` file.
 
 ``` html
-<div class="widget-container paper-widget">
 
+<ul class="flex-container">
+    <li class="flex-item">
+
+    </li>
+    <li class="flex-item">
+
+    </li>
+    <li class="flex-item">
+
+    </li>
+    <li class="flex-item">
+
+    </li>
+    <li class="flex-item">
+
+    </li>
+</ul>
+```
+
+###### Widget
+
+Each widget consists of the following sections...
+
+**Main display**
+
+* Material name e.g. `compost`
+* Material measurement e.g. `8.4`
+* **+** `button`
+
+**Add info**
+
+* `input` area
+* **add** `button`
+
+``` html
+<div class="widget-container compost-widget">
     <div class="material-details">
-        <h1 class="material-name">Paper</h1>
-        <h2 class="material-measurement">12.6<span class="metric">kg</span></h2>
+        <h1 class="material-name">Compost</h1>
+        <h2 class="material-measurement">8.4<span class="metric">kg</span></h2>
     </div>
 
     <div class="add-button-style">
-        <button class="paper"><div class="button-value">+</div></button>
+        <button id="compost"><div class="button-value">+</div></button>
     </div>
-
 </div>
+<div class="add-info-container add-compost-info">
 
-<div class="add-info-container add-paper-info">
     <form class="input-form" action="">
         <p>Please enter the new measurement:</p>
-        <input class="input-measurement-area" type="number" name="paper-input" size="">
+
+        <input class="input-measurement-area" type="number" name="compost-input">
         <input class="form-submit-button" type="submit" value="Add">
     </form>
 
 </div>
 ```
 
-#### **Task List**
+#### Initial Task List
 
-- [x] The Basic widget template has been designed
-- [x] A button has been designed which toggles viewing the input area
-- [x] The toggle button needs to rotate on click
-- [ ] The toggle needs to be redesigned to be perfectly square
-- [x] The text colour needs to match the background colour
-- [x] The 'add' button needs to be styled according to the mockup
-- [x] Form inputs need to have relevent names for backend manipulation
-- [x] Code needs to converted to use more responsive friendly measurements
+- [x] Design basic widget templates
+- [x] Design a button that will be used to toggle the 'add info' area
+- [x] Add an animation that rotates the button when clicked
+- [x] Make the buttons contents transparent to match the background colour
+- [x] Ensure the 'add' button is styled according to the mockup on all devices, default styled need to be disabled
+- [x] Add relevent names to each form, for backend integration
+- [x] Convert the code to be more responsive friendly
+- [ ] **The toggle needs to be perfectly square**
 
 The current web application can be found [here](https://usyyy.github.io/).
-
 
 Feel free to suggest improvements to the web application.
