@@ -25,7 +25,7 @@ The web application, will be created using a **widget based** theme.
 The design was created by **James Mitchell** and is largely influenced by the [Keele Style Guide](https://www.keele.ac.uk/brand/).
 
 <p align="center">
-     <img src="mockups/recycling-widget.jpg" width="250"/>
+     <img src="mockup/recycling-widget.jpg" width="250"/>
 </p>
 
 
