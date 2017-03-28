@@ -5,21 +5,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
     <!--
-        - Download normalize from this link, since the bower installation is old
         - I replaced the bower normalize.css css with the code from the link
         - https://necolas.github.io/normalize.css/6.0.0/normalize.css
+        -
+        - This was due to the bower installed normalize not working on iphones
     -->
-    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
-    <link rel="stylesheet" href="grid/css/grid.min.css">
-    <link rel="stylesheet" href="widget/css/widget.css">
+    <link rel="stylesheet" href="src/css/grid.min.css">
+    <link rel="stylesheet" href="src/css/widget.css">
     <title>Sustainability Site</title>
 </head>
 
 <body>
 
     <header>
-        <img src="mockups/components/recycling-logo.svg" alt="Recycle Logo">
+        <img src="src/img/svg/recycling-logo.svg" alt="Recycle Logo">
         <span>Recycling</span>
     </header>
 
@@ -174,15 +175,15 @@
 
     <footer>
         <div>
-            <img src="mockups/components/keele-logo.png" alt="Keele Logo">
+            <img src="src/img/keele-logo.png" alt="Keele Logo">
         </div>
         <div>
-            <img src="mockups/components/think-green.png" alt="Think Green">
+            <img src="src/img/think-green.png" alt="Think Green">
         </div>
-        <div>Icon made by <a target="_blank" href="http://www.freepik.com" title="Freepik">Freepik</a> from <a target="_blank" href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        <div class="icon-reference">Icon made by <a target="_blank" href="http://www.freepik.com" title="Freepik">Freepik</a> from <a target="_blank" href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
     </footer>
 
-    <script src="widget/js/widget.js"></script>
+    <script src="src/js/widget.js"></script>
 </body>
 
 </html>
