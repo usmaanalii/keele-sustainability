@@ -1,15 +1,3 @@
-<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
-
-	- [Keele University Collaborative App Development](#keele-university-collaborative-app-development)
-		- [Developing a web application for the Keele Sustainability Bungalow](#developing-a-web-application-for-the-keele-sustainability-bungalow)
-		- [**Goals**](#goals)
-		- [**Design**](#design)
-				- [Development](#development)
-					- [Widget Markup](#widget-markup)
-			- [**Task List**](#task-list)
-
-<!-- /TOC -->
-
 ## Keele University Collaborative App Development
 
 ### Developing a web application for the Keele Sustainability Bungalow
