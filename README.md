@@ -5,8 +5,10 @@
 - [**Goals**](#goals)
 - [**Team members**](#team-members)
 - [**Design**](#design)
-- [**Development**](#development)
-- [**Task List**](#task-list)
+- [**Development Approach**](#development)
+- [**Technologies**](#technologies)
+- [**Markup Walkthrough**](#markup-walkthrough)
+- [**Initial Task List**](#initial-task-list)
 
 #### Goals
 
@@ -38,21 +40,21 @@ One of the most important features of using the widget based approach, was that 
 
 The recycling widget code is shown below. It has been constructed to act as a template such that the **material name** acts as a parameter that can be manipulated based on what it being tracked.
 
-##### Technologies
+#### Technologies
 
-###### HTML, CSS (including SASS), jQuery
+##### HTML, CSS (including SASS), jQuery
 
-The Basic web development stack was used, along with SASS, a CSS preprocessor that was used in the **responsive grid**.
+The Basic web development stack was used, along with SASS, a CSS preprocessor that was used in the responsive grid.
 
-###### Bower
+##### Bower
 
 Bower, is used to manage components for front end development, this project is small in scope, however, in order to ensure the web application is scalable, it made sense to use a package manager.
 
-So far, it has been used to download **jQuery** and **normalize.css**.
+So far, it has been used to download jQuery and normalize.css.
 
-##### Markup walkthrough
+#### Markup walkthrough
 
-###### Flexbox Grid
+##### Flexbox Grid
 
 The `ul` tag represents the container for the widgets, and each widget is placed inside their own `li` tags. The SASS responsible for this behaviour can be seen in `src/css/sass/grid.scss` file.
 
