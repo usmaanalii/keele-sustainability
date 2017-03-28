@@ -14,36 +14,33 @@
  *
  * 5. The rotate-button class is used in the toggleClass method to enable the
  * rotation animation applied to each '+' button
+ *
+ * 6.
+ *
  */
 $(document).ready(function() {
-    $(".add-button-style > #paper").click(function() {
-        $(".add-paper-info").slideToggle(400);
-        $(this).toggleClass('rotate-button'); // for button
-    });
+    /**
+     * clickEvent
+     * @param  {string} materialName [Add the material name as a string,
+     *                               this completes the id identifier in the
+     *                               first selector, and class identifier in
+     *                               the second selector
+     *                               e.g for clickEvent(paper), the result is
+     *                               #paper and .add-paper-info]
+     *
+     * @return [void]                [explained above]
+     */
+    var clickEvent = function(materialName) {
+        $(".add-button-style > #" + materialName).click(function() {
+            $(".add-" + materialName + "-info").slideToggle(400);
+            $(this).toggleClass('rotate-button'); // for button
+        });
+    };
 
-    $(".add-button-style > #compost").click(function() {
-        $(".add-compost-info").slideToggle(400);
-        $(this).toggleClass('rotate-button'); // for button
-    });
-
-    $(".add-button-style > #glass").click(function() {
-        $(".add-glass-info").slideToggle(400);
-        $(this).toggleClass('rotate-button'); // for button
-    });
-
-    $(".add-button-style > #metal").click(function() {
-        $(".add-metal-info").slideToggle(400);
-        $(this).toggleClass('rotate-button'); // for button
-    });
-
-    $(".add-button-style > #plastic").click(function() {
-        $(".add-plastic-info").slideToggle(400);
-        $(this).toggleClass('rotate-button'); // for button
-    });
-
-    $(".add-button-style > #general").click(function() {
-        $(".add-general-info").slideToggle(400);
-        $(this).toggleClass('rotate-button'); // for button
-    });
-
+    clickEvent('paper');
+    clickEvent('compost');
+    clickEvent('glass');
+    clickEvent('metal');
+    clickEvent('plastic');
+    clickEvent('general');
 });
