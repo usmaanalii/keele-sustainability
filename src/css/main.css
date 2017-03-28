@@ -7,11 +7,18 @@
 body {
 	background: #d5cec2;
 
-	font-family: 'Work Sans', sans-serif;
+	font-family: sans-serif;
 }
 
 /* Recycle Banner
    ======================================================================== */
+
+/**
+ * 1. Contains the recyle logo (SVG) and 'Recycle' text
+ * 2. Centers the image over the middle widget
+ * 3. Aligns the both svg and text according to the mockup
+ * 4. Dimensions used to match the widget
+ */
 
 header {
 	font-size: 3.3em;
@@ -29,8 +36,19 @@ header img {
 header span {
 	float: right;
 }
+
 /* Main widget
    ======================================================================== */
+
+/**
+ * 1. Specifies the dimensions for all widgets and their toggled 'add info'
+ * sections
+ * 2. The actual measurement e.g '12.8' has been scaled to stretch on the
+ * y axis since the required font couldn't be found
+ * 3. The metric e.g 'kg' is wrapped in a span since this text needed to be
+ * smaller than the measurement e.g '12.8'
+ *
+ */
 
 .widget-container {
 	width: 300px;
@@ -70,6 +88,18 @@ h2.material-measurement {
 /* Add button
    ======================================================================== */
 
+/**
+ * 1. The 'add-button-style' class acts as the wrapper to the button
+ *  on which the majority of the buttons styling has been applied
+ * 2. Most of the built in CSS applied to buttons has been removed and replaced
+ * by the CSS in the wrapper mentioned above
+ * 3. The transitions have however been applied to the actual button
+ * 4. The 'rotate-button' class will be used in jquery via toggleClass,
+ * to implement the rotation animation
+ *
+ * TODO: Clarify the reasons for the above statement
+ */
+
 .add-button-style {
 	display: inline;
 	float: right;
@@ -79,6 +109,7 @@ h2.material-measurement {
 }
 
 /* TODO: Button needs redesign to be perfectly square */
+
 /* .button-value refers to the '+' character */
 .add-button-style .button-value {
 	padding: 0 0.35em 0.15em 0.34em;
@@ -127,6 +158,14 @@ h2.material-measurement {
 /* Add measurement toggled section
    ======================================================================== */
 
+/**
+ * 1. This represents the sections that are displayed when the '+' button
+ * is clicked
+ * 2. Padding was necessary to match the size of the main widget section
+ * 3. The media query has been added since the button didn't line up with the
+ * input form on mobile devices
+ */
+
 .add-info-container {
 	display:none;
 
@@ -172,6 +211,16 @@ h2.material-measurement {
 	font-weight: bold;
 }
 
+/* Footer Section
+   ======================================================================== */
+
+/**
+ * 1. Contains keele logo (img), think green (img) and reference to the
+ * recycle logo in the header
+ * 2. Styles are associated with centering, spacing and making the reference
+ * fit the colour scheme of the webpage
+ */
+
 footer div {
 	margin-bottom: 2%;
 
@@ -192,13 +241,12 @@ footer .icon-reference {
    ======================================================================== */
 
 /**
-	* The colours are ordere as follows..
-	*
-	* Colour of the main widget section (x-widget)
-	* Colour of the 'add info' toggled section (add-x-info)
-	*
+	* 1. Colour declarations for each widget in the form
+		a). Main widget section colour e.g (paper-widget)
+		b). Add ingo section colour e.g (add-paper-info)
 */
 
+/* Widget 1 colours*/
 .paper-widget {
 	background: #D27036;
 }
@@ -207,6 +255,7 @@ footer .icon-reference {
 	background: #8b441b;
 }
 
+/* Widget 2 colours*/
 .compost-widget  {
 	background: #3f7300;
 }
@@ -215,6 +264,7 @@ footer .icon-reference {
 	background: #294705;
 }
 
+/* Widget 3 colours*/
 .glass-widget  {
 	background: #12a8ac;
 }
@@ -223,6 +273,7 @@ footer .icon-reference {
 	background: #0f787a;
 }
 
+/* Widget 4 colours*/
 .metal-widget  {
 	background: #536a5e;
 }
@@ -231,6 +282,7 @@ footer .icon-reference {
 	background: #3d4e45;
 }
 
+/* Widget 5 colours*/
 .plastic-widget  {
 	background: #6e312d;
 }
@@ -239,6 +291,7 @@ footer .icon-reference {
 	background: #542623;
 }
 
+/* Widget 2 colours*/
 .general-widget  {
 	background: #112369;
 }
@@ -250,30 +303,32 @@ footer .icon-reference {
 /* TODO: Make the CSS more efficient, violates DRY*/
 
 /**
-	* Targetting the '+' character located in each button
+	* 1. Targets the '+' character located in each button, to make it match
+	* the background
 */
 
-.add-button-style > .paper .button-value {
+.add-button-style > #paper .button-value {
 	color: #D27036;
 }
-.add-button-style > .compost .button-value {
+.add-button-style > #compost .button-value {
 	color: #3f7300;
 }
-.add-button-style > .glass .button-value {
+.add-button-style > #glass .button-value {
 	color: #12a8ac;
 }
-.add-button-style > .metal .button-value {
+.add-button-style > #metal .button-value {
 	color: #536a5e;
 }
-.add-button-style > .plastic .button-value {
+.add-button-style > #plastic .button-value {
 	color: #6e312d;
 }
-.add-button-style > .general .button-value {
+.add-button-style > #general .button-value {
 	color: #112369;
 }
 
 /**
-	* Targetting the 'add' character located in add button
+	* 1. Targets the 'add' character located in add button to make it match
+	* the background
 */
 .add-paper-info .form-submit-button {
 	color: #8b441b;

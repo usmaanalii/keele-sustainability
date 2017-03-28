@@ -13,7 +13,7 @@
         - This was due to the bower installed normalize not working on iphones
     -->
     <link rel="stylesheet" href="src/css/grid.min.css">
-    <link rel="stylesheet" href="src/css/widget.css">
+    <link rel="stylesheet" href="src/css/main.css">
     <title>Sustainability Site</title>
 </head>
 
@@ -26,6 +26,7 @@
 
     <ul class="flex-container">
         <li class="flex-item">
+            <!-- Widget 1 -->
             <div class="widget-container paper-widget">
 
                 <div class="material-details">
@@ -34,12 +35,22 @@
                 </div>
 
                 <div class="add-button-style">
-                    <button class="paper"><div class="button-value">+</div></button>
+                    <!--
+                        - All buttons have an id with the name of the
+                        current material
+                        - This is purely for the jquery onclick event that
+                        displays the add info section
+                        - The jquery function targets the children of each
+                        'add-button-style' class seperately
+                        - Further explanation is detailed in the widget.js file
+                    -->
+                    <button id="paper"><div class="button-value">+</div></button>
                 </div>
 
             </div>
 
             <div class="add-info-container add-paper-info">
+
                 <form class="input-form" action="">
                     <p>Please enter the new measurement:</p>
                     <input class="input-measurement-area" type="number" name="paper-input" size="">
@@ -50,6 +61,7 @@
         </li>
 
         <li class="flex-item">
+            <!-- Widget 2 -->
             <div class="widget-container compost-widget">
                 <div class="material-details">
                     <h1 class="material-name">Compost</h1>
@@ -57,10 +69,11 @@
                 </div>
 
                 <div class="add-button-style">
-                    <button class="compost"><div class="button-value">+</div></button>
+                    <button id="compost"><div class="button-value">+</div></button>
                 </div>
             </div>
             <div class="add-info-container add-compost-info">
+
                 <form class="input-form" action="">
                     <p>Please enter the new measurement:</p>
 
@@ -81,12 +94,13 @@
                 </div>
 
                 <div class="add-button-style">
-                    <button class="glass"><div class="button-value">+</div></button>
+                    <button id="glass"><div class="button-value">+</div></button>
                 </div>
 
             </div>
 
             <div class="add-info-container add-glass-info">
+
                 <form class="input-form" action="">
                     <p>Please enter the new measurement:</p>
                     <input class="input-measurement-area" type="number" name="glass-input">
@@ -106,12 +120,13 @@
                 </div>
 
                 <div class="add-button-style">
-                    <button class="metal"><div class="button-value">+</div></button>
+                    <button id="metal"><div class="button-value">+</div></button>
                 </div>
 
             </div>
 
             <div class="add-info-container add-metal-info">
+
                 <form class="input-form" action="">
                     <p>Please enter the new measurement:</p>
                     <input class="input-measurement-area" type="number" name="metal-input">
@@ -131,12 +146,13 @@
                 </div>
 
                 <div class="add-button-style">
-                    <button class="plastic"><div class="button-value">+</div></button>
+                    <button id="plastic"><div class="button-value">+</div></button>
                 </div>
 
             </div>
 
             <div class="add-info-container add-plastic-info">
+
                 <form class="input-form" action="">
                     <p>Please enter the new measurement:</p>
                     <input class="input-measurement-area" type="number" name="plastic-input">
@@ -157,12 +173,13 @@
                 </div>
 
                 <div class="add-button-style">
-                    <button class="general"><div class="button-value">+</div></button>
+                    <button id="general"><div class="button-value">+</div></button>
                 </div>
 
             </div>
 
             <div class="add-info-container add-general-info">
+
                 <form class="input-form" action="">
                     <p>Please enter the new measurement:</p>
                     <input class="input-measurement-area" type="number" name="general-input">
