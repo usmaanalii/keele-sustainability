@@ -59,7 +59,6 @@ So far, it has been used to download jQuery and normalize.css.
 The `ul` tag represents the container for the widgets, and each widget is placed inside their own `li` tags. The SASS responsible for this behaviour can be seen in `src/css/sass/grid.scss` file.
 
 ``` html
-
 <ul class="flex-container">
     <li class="flex-item">
 
