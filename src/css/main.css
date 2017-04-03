@@ -4,6 +4,19 @@
 
 @import url('https://fonts.googleapis.com/css?family=Oswald|Work+Sans:300');
 
+/* David (START)
+   ======================================================================== */
+.log {
+    float:right;
+}
+
+#logf {
+    clear:right;
+}
+
+/* David (END)
+   ======================================================================== */
+
 body {
 	background: #d5cec2;
 
@@ -291,7 +304,7 @@ footer .icon-reference {
 	background: #542623;
 }
 
-/* Widget 2 colours*/
+/* Widget 6 colours*/
 .general-widget  {
 	background: #112369;
 }
