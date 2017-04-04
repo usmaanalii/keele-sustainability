@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="src/js/Chart.bundle.js"></script>
+    <script src="bower_components/chart.js/dist/Chart.bundle.js"></script>
     <!-- Custom script -->
     <script src="src/js/script1.js"></script>
     <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
