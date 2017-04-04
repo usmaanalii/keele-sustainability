@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="../src/js/Chart.bundle.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="src/js/Chart.bundle.js"></script>
     <!-- Custom script -->
-    <script src="../src/js/script1.js"></script>
+    <script src="src/js/script1.js"></script>
     <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
     <!--
         - I replaced the bower normalize.css css with the code from the link
@@ -15,22 +15,27 @@
         -
         - This was due to the bower installed normalize not working on iphones
     -->
-    <link rel="stylesheet" href="../src/css/grid.min.css">
-    <link rel="stylesheet" href="../src/css/main.css">
+    <link rel="stylesheet" href="src/css/grid.min.css">
+    <link rel="stylesheet" href="src/css/main.css">
     <title>Sustainability Site</title>
 </head>
 
 <body>
 
     <!-- David
+        - Potential conflicts in the code !
         - input-measurement-area -> input-text-area
+        - NEED TO KNOW IF 'input-measurement-area' class has any dependencies
+        with the backend
     -->
+
+    <!-- Login -->
     <div class="log" id="log">
         <p class="log" id="greet"></p>
     </div>
 
     <header>
-        <img src="../src/img/svg/recycling-logo.svg" alt="Recycle Logo">
+        <img src="src/img/svg/recycling-logo.svg" alt="Recycle Logo">
         <span>Recycling</span>
     </header>
 
@@ -38,7 +43,7 @@
         - Flexbox is used to create the responsive grid
         = The <ul> wraps all widgets
         - Each widget is put into it's own <li> tag
-        - The code can be seen in ../src/css/sass/grid.scss
+        - The code can be seen in src/css/sass/grid.scss
         - A more in depth explanation can be found at the following link
         https://css-tricks.com/snippets/css/a-guide-to-flexbox/
     -->
@@ -283,10 +288,10 @@
 
     <footer>
         <div>
-            <img src="../src/img/keele-logo.png" alt="Keele Logo">
+            <img src="src/img/keele-logo.png" alt="Keele Logo">
         </div>
         <div>
-            <img src="../src/img/think-green.png" alt="Think Green">
+            <img src="src/img/think-green.png" alt="Think Green">
         </div>
         <div class="icon-reference">Icon made by <a target="_blank" href="http://www.freepik.com" title="Freepik">Freepik</a> from <a target="_blank" href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by
             <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
@@ -295,8 +300,8 @@
 
     <div id="fb-root"></div>
 
-    <script src="../src/js/script2.js"></script>
-    <script src="../src/js/widget.js"></script>
+    <script src="src/js/script2.js"></script>
+    <script src="src/js/widget.js"></script>
 </body>
 
 </html>
