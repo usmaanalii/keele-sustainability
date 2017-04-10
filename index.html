@@ -17,6 +17,54 @@
     -->
     <link rel="stylesheet" href="src/css/grid.min.css">
     <link rel="stylesheet" href="src/css/main.css">
+    <style media="screen">
+
+        body {
+        margin: 0 !important;
+        padding: 0 !important;
+        }
+
+        * {
+            /*border: 1px solid black;*/
+        }
+
+        .form-container {
+            background: rgb(6, 13, 61);
+            margin-bottom: 1.5%;
+            height: 42px;
+        }
+
+        .form-container form {
+            float: right;
+        }
+
+        .login-form input {
+            margin-top: 3.5%;
+            margin-right: 0.5em;
+            padding: 0.3em;
+            border-radius: 0.4em;
+            border: 0;
+            outline: none;
+            /*display: none;*/
+        }
+
+        .login-form input::-webkit-input-placeholder {
+            /* WebKit, Blink, Edge */
+            color: rgb(188, 188, 191);
+        }
+
+        .login-form #icon-image-border{
+            background: white;
+            border-radius: 10%;
+            float: right;
+            margin: 0.15em 0.15em 0 0;
+        }
+
+        .login-form #user-icon-image {
+            vertical-align: middle;
+            padding: 2px;
+        }
+    </style>
     <title>Sustainability Site</title>
 </head>
 
@@ -24,13 +72,20 @@
 
     <!-- David
         - input-measurement-area -> input-text-area
+        - login has <div class="log" id="log"><p class="log" id ="greet">
     -->
-    <div class="log" id="log">
-        <p class="log" id="greet"></p>
+    <div class="form-container">
+        <form class="login-form" action="index.html" method="post">
+            <input type="text" name="username" placeholder="username">
+            <input type="text" name="password" placeholder="password">
+            <div id="icon-image-border">
+                <img id="user-icon-image" src="src/img/svg/user-icon.svg" alt="User Icon">
+            </div>
+        </form>
     </div>
 
     <header>
-        <img src="src/img/svg/recycling-logo.svg" alt="Recycle Logo">
+        <img id="recycle-image" src="src/img/svg/recycling-logo.svg" alt="Recycle Logo">
         <span>Recycling</span>
     </header>
 

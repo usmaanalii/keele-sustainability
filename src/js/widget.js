@@ -1,5 +1,3 @@
-// TODO: Make the code more efficient, violates DRY
-
 /**
  * 1. Document ready used to ensure the page has fully loaded
  *
@@ -13,34 +11,35 @@
  * x denotes the unique material names
  *
  * 5. The rotate-button class is used in the toggleClass method to enable the
- * rotation animation applied to each '+' button
  *
- * 6.
+ * 6.  rotation animation applied to each '+' button
+ *
  *
  */
 $(document).ready(function() {
     /**
-     * clickEvent
+     * addInputClickEvent
      * @param  {string} materialName [Add the material name as a string,
      *                               this completes the id identifier in the
      *                               first selector, and class identifier in
      *                               the second selector
-     *                               e.g for clickEvent(paper), the result is
+     *                               e.g for addInputClickEvent(paper), the result is
      *                               #paper and .add-paper-info]
      *
      * @return [void]                [explained above]
      */
-    var clickEvent = function(materialName) {
+    var addInputClickEvent = function(materialName) {
         $(".add-button-style > #" + materialName).click(function() {
             $(".add-" + materialName + "-info").slideToggle(400);
             $(this).toggleClass('rotate-button'); // for button
         });
     };
 
-    clickEvent('paper');
-    clickEvent('compost');
-    clickEvent('glass');
-    clickEvent('metal');
-    clickEvent('plastic');
-    clickEvent('general');
+    // Function calls
+    addInputClickEvent('paper');
+    addInputClickEvent('compost');
+    addInputClickEvent('glass');
+    addInputClickEvent('metal');
+    addInputClickEvent('plastic');
+    addInputClickEvent('general');
 });
