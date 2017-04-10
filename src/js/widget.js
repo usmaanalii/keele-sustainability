@@ -17,7 +17,7 @@
      * 6.
      *
      */
-    $(document).ready(function() {
+    jQuery(function($) {
         /**
          * addInputClickEvent
          * @param  {string} materialName [Add the material name as a string,
@@ -35,10 +35,6 @@
                 $(this).toggleClass('rotate-button'); // for button
             });
         };
-
-        $(".login-form #user-icon-image").click(function() {
-            $(".login-form input").show();
-        });
 
         // Function calls
         addInputClickEvent('paper');
