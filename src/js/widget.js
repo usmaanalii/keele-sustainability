@@ -1,45 +1,50 @@
-/**
- * 1. Document ready used to ensure the page has fully loaded
- *
- * 2. Each button is accessed via their unique id named after their material
- *
- * 3. All buttons are children of the .add-button-style class which applies
- * the button style
- *
- * 4. Each click function initiates their own slideToggle which displays a
- * new section, this section is targeted via the class 'add-x-info' where
- * x denotes the unique material names
- *
- * 5. The rotate-button class is used in the toggleClass method to enable the
- *
- * 6.  rotation animation applied to each '+' button
- *
- *
- */
-$(document).ready(function() {
-    /**
-     * addInputClickEvent
-     * @param  {string} materialName [Add the material name as a string,
-     *                               this completes the id identifier in the
-     *                               first selector, and class identifier in
-     *                               the second selector
-     *                               e.g for addInputClickEvent(paper), the result is
-     *                               #paper and .add-paper-info]
-     *
-     * @return [void]                [explained above]
-     */
-    var addInputClickEvent = function(materialName) {
-        $(".add-button-style > #" + materialName).click(function() {
-            $(".add-" + materialName + "-info").slideToggle(400);
-            $(this).toggleClass('rotate-button'); // for button
-        });
-    };
 
-    // Function calls
-    addInputClickEvent('paper');
-    addInputClickEvent('compost');
-    addInputClickEvent('glass');
-    addInputClickEvent('metal');
-    addInputClickEvent('plastic');
-    addInputClickEvent('general');
-});
+    /**
+     * 1. Document ready used to ensure the page has fully loaded
+     *
+     * 2. Each button is accessed via their unique id named after their material
+     *
+     * 3. All buttons are children of the .add-button-style class which applies
+     * the button style
+     *
+     * 4. Each click function initiates their own slideToggle which displays a
+     * new section, this section is targeted via the class 'add-x-info' where
+     * x denotes the unique material names
+     *
+     * 5. The rotate-button class is used in the toggleClass method to enable the
+     * rotation animation applied to each '+' button
+     *
+     * 6.
+     *
+     */
+    $(document).ready(function() {
+        /**
+         * addInputClickEvent
+         * @param  {string} materialName [Add the material name as a string,
+         *                               this completes the id identifier in the
+         *                               first selector, and class identifier in
+         *                               the second selector
+         *                               e.g for addInputClickEvent(paper), the result is
+         *                               #paper and .add-paper-info]
+         *
+         * @return [void]                [explained above]
+         */
+        var addInputClickEvent = function(materialName) {
+            $(".add-button-style > #" + materialName).click(function() {
+                $(".add-" + materialName + "-info").slideToggle(400);
+                $(this).toggleClass('rotate-button'); // for button
+            });
+        };
+
+        $(".login-form #user-icon-image").click(function() {
+            $(".login-form input").show();
+        });
+
+        // Function calls
+        addInputClickEvent('paper');
+        addInputClickEvent('compost');
+        addInputClickEvent('glass');
+        addInputClickEvent('metal');
+        addInputClickEvent('plastic');
+        addInputClickEvent('general');
+    });
