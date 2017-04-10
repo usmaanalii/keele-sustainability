@@ -18,6 +18,53 @@
     -->
     <link rel="stylesheet" href="src/css/grid.min.css">
     <link rel="stylesheet" href="src/css/main.css">
+    <style>
+        /*
+         * TODO: WHY ISN'T THIS WORKING FROM A DIFFERENT SCRIPT?!?!?!?!?
+         */
+        .form-container {
+            height: 42px;
+            margin-bottom: 1.5%;
+
+            background: rgb(6, 13, 61);
+        }
+
+        .form-container form {
+            float: right;
+        }
+
+        .login-form input {
+            display: none;
+
+            margin-top: 3.5%;
+            margin-right: 0.5em;
+            padding: 0.3em;
+
+            border: 0;
+            border-radius: 0.4em;
+            outline: none;
+        }
+
+        .login-form input::-webkit-input-placeholder {
+            /* WebKit, Blink, Edge */
+            color: rgb(188, 188, 191);
+        }
+
+        .login-form #icon-image-border{
+            float: right;
+
+            margin: 0.15em 0.15em 0 0;
+
+            border-radius: 10%;
+            background: white;
+        }
+
+        .login-form #user-icon-image {
+            padding: 2px;
+
+            vertical-align: middle;
+        }
+    </style>
     <title>Sustainability Site</title>
 </head>
 
