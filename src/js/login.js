@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $(".login-form #user-icon-image").click(function() {
-        $(".login-form input").slideToggle(100);
+    $("#user-icon-image").click(function() {
+        $(".form-container").slideToggle(400);
     });
 });
