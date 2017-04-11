@@ -5,19 +5,34 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+    <script src="src/js/login.js"></script>
     <!--
         - I replaced the bower normalize.css css with the code from the link
         - https://necolas.github.io/normalize.css/6.0.0/normalize.css
         -
         - This was due to the bower installed normalize not working on iphones
     -->
+    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">[]
     <link rel="stylesheet" href="src/css/grid.min.css">
     <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/login.css">
     <title>Sustainability Site</title>
 </head>
 
 <body>
+
+    <div class="user-icon-container">
+        <div id="icon-image-border">
+            <img id="user-icon-image" src="src/img/svg/user-icon.svg" alt="User Icon">
+        </div>
+    </div>
+    <div class="form-container">
+        <form class="login-form" action="index.html" method="post">
+            <input type="text" name="username" placeholder="username">
+            <input type="password" name="password" placeholder="password">
+            <input type="submit" name="log-in-submit" value="OK">
+        </form>
+    </div>
 
     <header>
         <img src="src/img/svg/recycling-logo.svg" alt="Recycle Logo">
