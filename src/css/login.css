@@ -11,10 +11,10 @@ body {
     margin-bottom: 5%;
 
     text-align: center;
-    /* TODO: Border is needed to prevent the form container dropping on click */
 
-    border: 1px solid rgb(6, 13, 61);
-	background: rgb(6, 13, 61);
+    /* TODO: Border is needed to prevent the form container dropping on click */
+    border: 1px solid #060d3d;
+	background: #060d3d;
 }
 
 
@@ -74,7 +74,7 @@ body {
     /*border: 1px solid red;*/
     height: 40px;
 
-    background: rgb(6, 13, 61);
+    background: #060d3d;
 }
 
 #icon-image-border{
