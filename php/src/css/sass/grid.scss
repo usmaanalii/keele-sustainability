@@ -1,0 +1,33 @@
+.flex-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    padding: 0;
+
+    list-style: none;
+
+    -webkit-flex-flow: row wrap;
+    justify-content: center;
+}
+
+.flex-item {
+    // width: 350px;
+    // height: 500px;
+    margin-top: 10px;
+    padding: 5px;
+
+    color: white;
+
+    justify-content: flex-start;
+}
+
+// Prevent all widgets wrapping to one line on large screens
+@media (min-width: 1345px) {
+  .flex-container {
+      width: 1345px;
+      margin: 1% auto;
+  }
+}

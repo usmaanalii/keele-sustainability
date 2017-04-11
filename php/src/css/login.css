@@ -1,0 +1,78 @@
+body {
+    margin: 0 !important;
+	padding: 0 !important;
+}
+
+/* Login Form
+  ======================================================================== */
+.form-container {
+    /* TODO: Border is needed to prevent the form container dropping on click */
+    border: 1px solid rgb(6, 13, 61);
+    margin-bottom: 5%;
+
+    text-align: center;
+
+	background: rgb(6, 13, 61);
+    display: none;
+}
+
+
+.login-form input {
+	display: block;
+    clear: both;
+
+    margin: 0 auto;
+    margin-top: 2%;
+
+	border: 0;
+	border-radius: 0.4em;
+	outline: none;
+}
+
+.login-form input[type="text"] {
+    width: 40%;
+	margin-bottom: 4%;
+    padding: 0.6em;
+}
+
+.login-form input[type="submit"] {
+    width: 15%;
+	margin-bottom: 20px;
+    padding: 0.3em;
+
+    cursor: pointer;
+
+    color: #4a4a4a;
+    background: #c8c8c8;
+
+    font-weight: bold;
+}
+
+
+/* WebKit, Blink, Edge */
+.login-form input::-webkit-input-placeholder {
+	color: rgb(188, 188, 191);
+}
+
+.image-block {
+    /*border: 1px solid red;*/
+    height: 40px;
+
+    background: rgb(6, 13, 61);
+}
+
+#icon-image-border{
+	float: right;
+
+	margin: 0.15em 0.15em 0 0;
+
+	border-radius: 10%;
+	background: white;
+}
+
+#user-icon-image {
+	padding: 2px;
+
+    cursor:pointer;
+	vertical-align: middle;
+}
