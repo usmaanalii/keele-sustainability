@@ -5,14 +5,19 @@ body {
 
 /* Login Form
   ======================================================================== */
+
+  /**
+   * 1. Contains an icon that when clicked reveals a login form
+   * 2. Login form allows admin users to enter and add data to the database
+   */
 .form-container {
     display: none;
 
     margin-bottom: 5%;
 
     text-align: center;
-
     /* TODO: Border is needed to prevent the form container dropping on click */
+
     border: 1px solid #060d3d;
 	background: #060d3d;
 }
@@ -35,6 +40,7 @@ body {
     max-width: 20em;
 	margin-bottom: 4%;
     padding: 0.6em;
+
     font-size: 0.8em;
 }
 
@@ -71,7 +77,6 @@ body {
 }
 
 .user-icon-container {
-    /*border: 1px solid red;*/
     height: 40px;
 
     background: #060d3d;
