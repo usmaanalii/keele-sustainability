@@ -32,7 +32,7 @@ if (isset($_GET['type']) && isset($_GET['year'])) {
 	$year = $_GET['year'];
 	$prevyear = $year - 1;
 	$months = array(
-		'January', 
+		'January',
 		'February',
 		'March',
 		'April',
