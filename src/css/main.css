@@ -86,7 +86,6 @@ h1.material-name {
 	font-size: 1.5em;
 }
 
-
 h2.material-measurement {
 	display: block;
 
@@ -96,6 +95,17 @@ h2.material-measurement {
 	letter-spacing: 0.02em;
 
 	font-size: 3.5em;
+}
+
+h3.material-error {
+	display: block;
+	
+	margin: 10px 0 10px 0;
+
+	transform: scaleY(1.2);
+	letter-spacing: 0.02em;
+
+	font-size: 1.8em;
 }
 
 /* Targets the 'kg'*/
@@ -133,6 +143,7 @@ h2.material-measurement {
 /* .button-value refers to the '+' character */
 .add-button-style .button-value {
 	padding: 0 0.35em 0.15em 0.34em;
+	display: none;
 
 	color: black;
 	border-radius: 20%;
@@ -329,22 +340,22 @@ footer .icon-reference {
 	* the background
 */
 
-.add-button-style > #paper .button-value {
+.add-button-style > #paper1 .button-value {
 	color: #D27036;
 }
-.add-button-style > #compost .button-value {
+.add-button-style > #compost1 .button-value {
 	color: #3f7300;
 }
-.add-button-style > #glass .button-value {
+.add-button-style > #glass1 .button-value {
 	color: #12a8ac;
 }
-.add-button-style > #metal .button-value {
+.add-button-style > #metal1 .button-value {
 	color: #536a5e;
 }
-.add-button-style > #plastic .button-value {
+.add-button-style > #plastic1 .button-value {
 	color: #6e312d;
 }
-.add-button-style > #general .button-value {
+.add-button-style > #general1 .button-value {
 	color: #112369;
 }
 
@@ -380,4 +391,18 @@ footer .icon-reference {
 .twitter-widget {
 	height: 300px;
 	background-color: white;
+}
+
+.graphplace {
+	background-color: white;
+}
+
+.widget-container {
+	overflow-y:auto;
+}
+
+.widget-container table {
+	font-size; 0.7em;
+    table-layout:fixed;
+    width:100%;
 }

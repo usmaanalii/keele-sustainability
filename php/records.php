@@ -14,7 +14,7 @@ $type = $_GET['type'];
 			$stmt->store_result();
 			if ($stmt->num_rows > 0){
 				$stmt->bind_result($lid, $weight, $rdate, $uid);
-				echo "<table id='{$type}tab'><tr><td><button>Prev 25</button></td><td><button>Next 25</button></td><td><button class='yearly'>Yearly View</button></td></tr>
+				echo "<table id='{$type}tab'><tr><td><button class='justwork' value = '$type'>Yearly View</button></td></tr>
 						<tr><th>LogNum</th><th>Weight(kg)</th><th>date</th><th>User</th></tr>";
 				while ($stmt->fetch()) {
                     $nweight = $weight/1000;
@@ -27,7 +27,7 @@ $type = $_GET['type'];
 	}
 }
 
-if (isset($_GET['type'], $_GET['year'])) {
+if (isset($_GET['type']) && isset($_GET['year'])) {
 	$type = $_GET['type'];
 	$year = $_GET['year'];
 	$prevyear = $year - 1;

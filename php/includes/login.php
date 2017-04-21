@@ -4,9 +4,9 @@ include_once 'functions.php';
 
 session_start();
  
-if (isset($_POST['email'], $_POST['p'])) {
+if (isset($_POST['email'], $_POST['password'])) {
     $email = $_POST['email'];
-    $password = $_POST['p']; // The hashed password.
+    $password = $_POST['password']; // The hashed password.
  
     if (login($email, $password, $conn) == true) {
         // Login success 

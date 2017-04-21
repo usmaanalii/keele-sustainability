@@ -1,12 +1,12 @@
 function ajaxres(res, i) {
-    $.post("includes/resources.php", "i=" + res[i], function(data) {
+    $.post("/php/includes/resources.php", "i=" + res[i], function(data) {
         $("#" + res[i] + "up").html(data);
     });
     $("#" + res[i] + "send").submit(function() {
         event.preventDefault();
-        $.post("includes/resources.php", $("#" + res[i]).serialize(), function(data) {
+        $.post("/php/includes/resources.php", $("#" + res[i]).serialize(), function(data) {
             $("#" + res[i] + "put").html(data);
-            $.post("includes/resources.php", "i=" + res[i], function(data) {
+            $.post("/php/includes/resources.php", "i=" + res[i], function(data) {
                 $("#" + res[i] + "up").html(data);
             });
         });
@@ -43,21 +43,21 @@ function chartmake(nameput, dataput) {
 
 
 $('document').ready(function() {
-    $.get("login.php", "login", function(data) {
+    $.get("/php/login.php", "login", function(data) {
         if (data === 'success') {
             var logged = true;
             $(".expand").show();
-            $.get("login.php", "login&name", function(data) {
+            $.get("/php/login.php", "login&name", function(data) {
                 var name = data;
                 $("#greet").html("Hello " + name + "!");
-                $("<form action='logout.php' class='log' id='logf'><input type='submit' value='logout'/></form>").appendTo("#log");
+                $("<form action='/php/logout.php' class='log' id='logf'><input type='submit' value='logout'/></form>").appendTo("#log");
             });
         } else {
             var logged = false;
             $("<button class='log' id='logbut'>login</button>").appendTo("#log");
             $("#logbut").click(function() {
                 $(
-                    "<form action='includes/login.php' method='post' name='login_form' class='log'> Email: <input class='log' type='text' name='email'/><br> Password: <input class='log' type='password' name='p' id='password'/><br><input class='log' type='submit' value='Login'/></form>"
+                    "<form action='/php/includes/login.php' method='post' name='login_form' class='log'> Email: <input class='log' type='text' name='email'/><br> Password: <input class='log' type='password' name='p' id='password'/><br><input class='log' type='submit' value='Login'/></form>"
                 ).appendTo("#log");
             });
         }
@@ -69,13 +69,13 @@ $('document').ready(function() {
     
     $(".graphopen").click(function() {
         var type = $(this).attr("value");
-        $.get("graph.php", "type=" + type + "&y", function(data) {
+        $.get("/php/graph.php", "type=" + type + "&y", function(data) {
             $years = JSON.parse(data);
             $.each($years, function(i, value) {
                 $("#yearsal").append($("<option>").text((value) - 1).attr("value", value));
                 var year = $("#yearsal").val();
                 var name = type + " " + (year - 1);
-                $.get("graph.php", "type=" + type + "&i=" + year, function(data) {
+                $.get("/php/graph.php", "type=" + type + "&i=" + year, function(data) {
                     var chartdata = (JSON.parse(data));
                     chartmake(name, chartdata);
                 });
@@ -83,7 +83,7 @@ $('document').ready(function() {
             $("#yearsel").change(function() {
                 var year = $("#yearsal").val();
                 var name = type + " " + (year - 1);
-                $.get("graph.php", "type=" + type + "&i=" + year, function(data) {
+                $.get("/php/graph.php", "type=" + type + "&i=" + year, function(data) {
                     var chartdata = (JSON.parse(data));
                     chartmake(name, chartdata);
                 });
@@ -92,7 +92,7 @@ $('document').ready(function() {
     });
     $(".recordopen").click(function() {
         var rectype = $(this).attr("value");
-        $.get("records.php", "type=" + rectype, function(data) {
+        $.get("/php/records.php", "type=" + rectype, function(data) {
             $(".recordput").html(data);
             $(".recedit").click(function() {
                 var rowid = $(this).attr("value");
@@ -126,7 +126,7 @@ $('document').ready(function() {
                 });
             });
             $(".yearly").click(function() {
-                $.get("records.php", "type=" + rectype + "&year=2017", function(data) {
+                $.get("/php/records.php", "type=" + rectype + "&year=2017", function(data) {
                     $(".recordput").html(data);
                 });
             });

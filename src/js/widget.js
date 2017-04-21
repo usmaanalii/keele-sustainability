@@ -30,9 +30,14 @@ jQuery(function($) {
      * @return [void]                [explained above]
      */
     var addInputClickEvent = function(materialName) {
-        $(".add-button-style > #" + materialName).click(function() {
+        $(".add-button-style > #" + materialName + "1").click(function() {
             $(".add-" + materialName + "-info").slideToggle(400);
+            $(".add-" + materialName + "-info").html('<form id="'+ materialName +'send" class="input-form" action=""> <p id="'+ materialName +'put">Please enter the new measurement:</p> <input id="'+ materialName +'" class="input-measurement-area" type="number" name="'+ materialName +'"> <input class="form-submit-button" type="submit" value="Add">');
             $(this).toggleClass('rotate-button'); // for button
+            var res = ["paper", "metal", "compost", "glass", "plastic", "general"];
+			for (i = 0; i < res.length; i++) {
+				ajaxres(res, i);
+			}
         });
     };
 

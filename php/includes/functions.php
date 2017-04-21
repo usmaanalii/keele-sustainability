@@ -17,10 +17,10 @@ function dataget($type, $conn){
                 }
                 $tweight = $tweight/1000;
                 $tweight = round($tweight, 2);
-                echo "$tweight <span>kg</span>";
-            } else {echo "<h1>No data recorded for this month...yet!</h1>";}
+                echo "<h2 class='material-measurement'>$tweight <span class='metric'>kg</span></h2>";
+            } else {echo "<h3 class='material-error'>No data recorded for this month...yet!</h3>";}
         }
-    } else {echo "<h1>Something broke!</h1>";}
+    } else {echo "<h3 class='material-error'>Something broke!</h3>";}
 }
 
 function datasend($type, $conn){
