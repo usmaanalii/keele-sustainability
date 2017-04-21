@@ -14,7 +14,6 @@
  * 5. The rotate-button class is used in the toggleClass method to enable the
  * rotation animation applied to each '+' button
  *
- * 6.
  *
  */
 jQuery(function($) {
