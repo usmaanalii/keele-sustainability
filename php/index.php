@@ -23,7 +23,9 @@
     <link rel="stylesheet" href="src/css/main.css">
     <link rel="stylesheet" href="src/css/login.css">
     <style>
-
+        #myChart {
+            background-color: red;
+        }
     </style>
     <title>Sustainability Site</title>
 </head>

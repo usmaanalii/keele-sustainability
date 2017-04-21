@@ -23,7 +23,7 @@
                                             "October",
                                             "November",
                                             "December",
-                                            "January", 
+                                            "January",
                                             "February",
                                             "March",
                                             "April",
@@ -34,7 +34,7 @@
                                 datasets: [{
                                     label: nameput,
                                     data: dataput,
-                                    backgroundColor: "rgba(153,153,51,0.6)"
+                                    backgroundColor: "rgba(251, 90, 11, 0.94)"
                                 }]
                             }
                         });

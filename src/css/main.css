@@ -99,7 +99,7 @@ h2.material-measurement {
 
 h3.material-error {
 	display: block;
-	
+
 	margin: 10px 0 10px 0;
 
 	transform: scaleY(1.2);
@@ -201,7 +201,7 @@ h3.material-error {
 	display:none;
 
 	width: 300px;
-	height: 150px;
+	height: 180px;
 	padding : 10px 20px 10px 20px;
 
 	color: #d5cec2;
