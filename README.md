@@ -127,6 +127,6 @@ Each widget consists of the following sections...
 - [x] Convert the code to be more responsive friendly
 - [ ] **The toggle needs to be perfectly square**
 
-The current web application can be found [here](https://usyyy.github.io/).
+<!-- The current web application can be found [here](https://usyyy.github.io/). -->
 
 Feel free to suggest improvements to the web application.
