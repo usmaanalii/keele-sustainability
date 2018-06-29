@@ -1,0 +1,355 @@
+* {
+	/*border: 1px solid black;*/
+}
+
+@import url('https://fonts.googleapis.com/css?family=Oswald|Work+Sans:300');
+
+body {
+	background: #d5cec2;
+
+	font-family: sans-serif;
+}
+
+/* Recycle Banner
+   ======================================================================== */
+
+/**
+ * 1. Contains the recyle logo (SVG) and 'Recycle' text
+ * 2. Centers the image over the middle widget
+ * 3. Aligns the both svg and text according to the mockup
+ * 4. Dimensions used to match the widget
+ */
+
+header {
+	font-size: 3.3em;
+	color: #b6afa2;
+	background: #e2dcd1;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 1.8%;
+}
+
+header img {
+	vertical-align: middle;
+	margin-bottom: 1%;
+	padding: 1% 0% 1% 5%;
+}
+
+header span {
+	float: right;
+	padding: 1% 5% 1% 0%;
+}
+
+/* Main widget
+   ======================================================================== */
+
+/**
+ * 1. Specifies the dimensions for all widgets and their toggled 'add info'
+ * sections
+ * 2. The actual measurement e.g '12.8' has been scaled to stretch on the
+ * y axis since the required font couldn't be found
+ * 3. The metric e.g 'kg' is wrapped in a span since this text needed to be
+ * smaller than the measurement e.g '12.8'
+ *
+ */
+
+.widget-container {
+	width: 300px;
+	height: 150px;
+	padding: 30px 20px 20px 20px;
+	
+	
+
+	text-align:center;
+
+	color: #d5cec2;
+}
+
+h1.material-name {
+	display: inline;
+
+	font-size: 1.5em;
+}
+
+
+h2.material-measurement {
+	display: block;
+
+	margin: 10px 0 10px 0;
+
+	transform: scaleY(1.2);
+	letter-spacing: 0.02em;
+
+	font-size: 3.5em;
+}
+
+/* Targets the 'kg'*/
+.material-measurement .metric {
+	margin-left: 1%;
+
+	font-size: 0.5em;
+}
+
+/* Add button
+   ======================================================================== */
+
+/**
+ * 1. The 'add-button-style' class acts as the wrapper to the button
+ *  on which the majority of the buttons styling has been applied
+ * 2. Most of the built in CSS applied to buttons has been removed and replaced
+ * by the CSS in the wrapper mentioned above
+ * 3. The transitions have however been applied to the actual button
+ * 4. The 'rotate-button' class will be used in jquery via toggleClass,
+ * to implement the rotation animation
+ *
+ * TODO: Clarify the reasons for the above statement
+ */
+
+.add-button-style {
+	display: inline;
+	float: right;
+
+	margin: 0px;
+	padding: 0px;
+}
+
+/* TODO: Button needs redesign to be perfectly square */
+
+/* .button-value refers to the '+' character */
+.add-button-style .button-value {
+	padding: 0 0.35em 0.15em 0.34em;
+
+	color: black;
+	border-radius: 20%;
+	background: #d5cec2;
+
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+.add-button-style button:focus {
+	outline: none;
+}
+
+.add-button-style button {
+	display:inline-block;
+
+	padding: 0px;
+
+	cursor:pointer;
+	-webkit-transition:  transform .5s ease-out;
+	-moz-transition:  transform .5s ease-out;
+	transition:  transform .5s ease-out;
+	text-decoration: none;
+
+	border: none;
+	background: none;
+
+	font-size: 1.8em;
+}
+
+/* Button rotation*/
+
+.rotate-button {
+	-webkit-transform: rotate(50deg);
+	-moz-transform: rotate(50deg);
+	-ms-transform: rotate(50deg);
+	-o-transform: rotate(50deg);
+	transform: rotate(50deg);
+}
+
+/* Button rotation end */
+
+/* Add measurement toggled section
+   ======================================================================== */
+
+/**
+ * 1. This represents the sections that are displayed when the '+' button
+ * is clicked
+ * 2. Padding was necessary to match the size of the main widget section
+ * 3. The media query has been added since the button didn't line up with the
+ * input form on mobile devices
+ */
+
+.add-info-container {
+	display:none;
+
+	width: 300px;
+	height: 150px;
+	padding : 10px 20px 10px 20px;
+	border-radius: 0px 0px 10px 10px;
+	color: #d5cec2;
+}
+
+.input-measurement-area {
+	width: 96%;
+	padding: 1%;
+
+	border-radius: 5px;
+	outline: none;
+
+	font-size: 1.25em;
+}
+
+/* Make the add button line up with input area on mobile */
+@media (max-width: 600px) {
+	.input-measurement-area {
+	  	width: 97.2%;
+  }
+}
+
+.form-submit-button {
+	display: block;
+	float: right;
+
+	margin-top: 3%;
+	padding: 1% 4% 1% 4%;
+
+	cursor:pointer;
+	text-decoration: none;
+
+	border: none;
+	border-radius: 5px;
+	background: #d5cec2;
+
+	font-size: 0.75em;
+	font-weight: bold;
+}
+
+/* Footer Section
+   ======================================================================== */
+
+/**
+ * 1. Contains keele logo (img), think green (img) and reference to the
+ * recycle logo in the header
+ * 2. Styles are associated with centering, spacing and making the reference
+ * fit the colour scheme of the webpage
+ */
+ 
+footer {
+	padding-top: 50px;
+}
+
+footer div {
+	margin-bottom: 2%;
+	text-align: center;
+}
+
+footer a {
+	text-decoration: none;
+	color: inherit;
+	font-weight: bold;
+}
+
+
+/* Main widget + toggled section colours
+   ======================================================================== */
+
+/**
+	* 1. Colour declarations for each widget in the form
+		a). Main widget section colour e.g (paper-widget)
+		b). Add ingo section colour e.g (add-paper-info)
+*/
+
+/* Widget 1 colours*/
+.paper-widget {
+	background: #D27036;
+}
+
+.add-paper-info {
+	background: #8b441b;
+}
+
+/* Widget 2 colours*/
+.compost-widget  {
+	background: #3f7300;
+}
+
+.add-compost-info {
+	background: #294705;
+}
+
+/* Widget 3 colours*/
+.glass-widget  {
+	background: #12a8ac;
+}
+
+.add-glass-info {
+	background: #0f787a;
+}
+
+/* Widget 4 colours*/
+.metal-widget  {
+	background: #536a5e;
+}
+
+.add-metal-info {
+	background: #3d4e45;
+}
+
+/* Widget 5 colours*/
+.plastic-widget  {
+	background: #6e312d;
+}
+
+.add-plastic-info {
+	background: #542623;
+}
+
+/* Widget 2 colours*/
+.general-widget  {
+	background: #112369;
+}
+
+.add-general-info {
+	background: #0a1749;
+}
+
+/* TODO: Make the CSS more efficient, violates DRY*/
+
+/**
+	* 1. Targets the '+' character located in each button, to make it match
+	* the background
+*/
+
+.add-button-style > #paper .button-value {
+	color: #D27036;
+}
+.add-button-style > #compost .button-value {
+	color: #3f7300;
+}
+.add-button-style > #glass .button-value {
+	color: #12a8ac;
+}
+.add-button-style > #metal .button-value {
+	color: #536a5e;
+}
+.add-button-style > #plastic .button-value {
+	color: #6e312d;
+}
+.add-button-style > #general .button-value {
+	color: #112369;
+}
+
+/**
+	* 1. Targets the 'add' character located in add button to make it match
+	* the background
+*/
+.add-paper-info .form-submit-button {
+	color: #8b441b;
+}
+.add-compost-info .form-submit-button {
+	color: #294705;
+}
+.add-glass-info .form-submit-button {
+	color: #0f787a;
+}
+.add-metal-info .form-submit-button {
+	color: #3d4e45;
+}
+.add-plastic-info .form-submit-button {
+	color: #542623;
+}
+.add-general-info .form-submit-button {
+	color: #0a1749;
+}
